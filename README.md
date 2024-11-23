@@ -92,13 +92,20 @@ Python-core-and-Advance/
 
 ## Languages and Tools
 
-[<img align="left" alt="Python" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" />][Python]
-[<img align="left" alt="Git" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" />][Git]
-[<img align="left" alt="GitHub" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" />][GitHub]
-[<img align="left" alt="VSCode" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" />][VSCode]
+Languages and Tools
+<img align="left" alt="Python" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" />
+Python: The primary language used in this repository, known for its simplicity and versatility.
+
+<img align="left" alt="Git" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" />
+Git: A distributed version control system to track changes in your project.
+
+<img align="left" alt="GitHub" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" />
+GitHub: A platform for version control and collaboration.
+
+<img align="left" alt="VSCode" width="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" />
+VSCode: A lightweight yet powerful code editor for writing and managing your Python scripts.
 
 <br />
-
 ---
 
 ## Contributing
