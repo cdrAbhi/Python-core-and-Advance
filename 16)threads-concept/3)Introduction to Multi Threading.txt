@@ -1,0 +1,27 @@
+                        Introduction to Multi Threading
+                        ===============================
+=>In the context of OS, we have a concept called Multi Tasking.
+=>The main purpose of Multi Threading in python is that "To achieve the Concurrent Execution ( Simultaneous / Parallel Execution ) "
+=>Multi Threading is one of the specilized form of Multi Tasking of OS.
+=>In this context , we have two types of applications. They are
+        a) Process Based Applications
+        b) Thread Based Applications.
+-----------------------------        
+a) Process Based Applications:
+-----------------------------    
+=>Process Based Applications execution environrnent always contains single thread.
+=>Process Based Applications provides Sequential Execution
+=>Process Based Applications takes more execution time
+=>Process Based Applications are treated as Heavy weight components.
+Examples:- The application of C,CPP...etc are comes under Process Based
+           Applications.
+Examples: The default Execution Environment of Python is also comes IJnder Process
+          Based Applicationq
+----------------------------
+b) Thread Based Applications:
+-----------------------------  
+=>Thread Based Applications execution environment always contains multiple threads for performing multiple Operations concurrently.
+=>Thread Based Applications provides concurrent execution.
+=>Thread Based Applications takes Less execution time
+=>Thread Based Applications are treated as Light weight components.
+Examples:— The application of PYTHON, JAVA...etc are comes under Thread Based Applications.

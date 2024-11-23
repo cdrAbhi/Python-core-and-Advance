@@ -1,0 +1,55 @@
+# QUE : write a python program which will generate 1 to n number?
+# ====
+n = int(input("Enter how many number you want to generate : "))
+
+if n<=0:
+    print("Invailid Input")
+else:
+    sn=1  # sn is assign then we will get name error
+    while(sn<=n):  #Instead of it if you use while() take condition as false
+        print(sn)
+        sn+=1
+    else:
+        print("\tAll number generated successfully")
+print("\t=====program exception successful======")    
+
+# write a python program which will generate n to 1 where n is positive ineger value.
+
+n1=n
+if(n1<=0):
+    print("Invailid number Please Enter vailid Input")
+else: 
+    while(n1>=1):  #Instead of it if you use while() take condition as false
+        print(n1)
+        n1-=1
+    else:
+        print("\tAll number generated successfully")
+print("\t=====program exception successful======")    
+    
+#write a python which will generate all the even number within n in forward direction where n can be positive.
+# =============================================================================================================
+if n<=0:
+    print("Invailid Input")
+else:
+    sn=2  # sn is assign then we will get name error
+    while(sn<=n):  #Instead of it if you use while() take condition as false
+        print(sn)
+        sn+=2
+    else:
+        print("\tAll Even number generated successfully")
+print("\t=====program exception successful======")    
+
+# write a python program which will generate Odd number within n where n is the positive integer value in forward direction.
+if n<=0:
+    print("Invailid Input")
+else:
+    sn=1  # sn is assign then we will get name error
+    while(sn<=n):  #Instead of it if you use while() take condition as false
+        print(sn)
+        sn+=2
+    else:
+        print("\tAll Odd number generated successfully")
+print("\t=====program exception successful======") 
+
+# write a python program which will generate Even number in backward direction within n where n is the positive integer value in forward direction.
+

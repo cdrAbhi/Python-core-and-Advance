@@ -1,0 +1,172 @@
+			=============================================================
+					Types of Methods in a Class of Python
+			=============================================================
+=>Methods of class of OOPs are nothing but Functions in Functional Programming.
+=>In Python Programming, Methods  are used for Performing Operations and Provides Code Re-Usability.
+=>In a Class of Python, we can define 3 Types of Methods. They are 
+
+			1. Instance Methods
+			2. Class Level Methods
+			3. Static Methods
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Instance Methods
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Instance Methods are used for Performing Specific Operations on Object Data ( Instance Data Members) and Instance Methods are called Object Level Methods.
+=>All Instance Methods Must Take self as First Possitional Parameter
+=>Syntax for Defining Instance Method:
+			def  InstanceMethodName(self , list of formal params if any):
+				--------------------------------------------------------------------------------
+				Specify Instance Data Members
+				Performs Specific Operations on Instance Data Members
+				--------------------------------------------------------------------------------
+=>Instance Methods Must be accessed w.r.t Object Name or self only
+						objectname.instance method name()
+								(OR)
+						self.instance method name()
+---------------------------------------
+what is self
+---------------------------------------
+=>self is one of Implicit object contains Current Class Object reference / memory address.
+=>self must be the First Possitional Parameter in Instance Method.
+=>Since self is the First Possitional Parameter in Instance Method, and hence It must be accessed within 
+   same Instance Method Body Only But not possibile to access in other part of the program.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Class Level Methods
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Class Level  Methods are used for Performing Common Operations on all the Object Data of Same 
+   Class and also used for Specifying Class Level Data Members.
+=>All Class Level Methods Definition Must starts with a Pre-defined Decorator called @classmethod
+=>All Class Level Methods Must Take cls as a First Possitional Parameter.
+----------------------------------------------------------------
+=>Syntax for Defining Class Level Method:
+----------------------------------------------------------------
+		@classmethod
+		def  classlevelmethod(cls,list of formal params if any):
+		       -----------------------------------------
+		       Block of statements Perform Common Operations
+		       Specify Class Level Data Members
+		       -----------------------------------------
+=>Class Level Methods Must be accessed w.r.t ClassName OR Object Name OR cls OR self.
+			ClassName.classlevelmethod()
+					OR
+			ObjectName.classlevelmethod()
+					OR
+			cls.classlevelmethod()
+					(OR)
+			self.classlevelmethod()
+---------------------------------------
+what is cls
+---------------------------------------
+=>cls is one of Implicit Variable contains Current Class Name.
+=>cls must be the First Possitional Parameter in Class Level Method.
+=>Since cls is the First Possitional Parameter in Class Level Method, and hence It must accessed within 
+   same Class Level Method Body Only But not possibile to access in other part of the program.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Static Methods--Tomorrow--at sharp 9:10am
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instance-Method
+==============
+You've identified two common ways of calling instance methods in Python. Let's clarify and expand on them:
+============================
+
+- 1)Using `self`: For calling methods within the same class.
+- 2)Using an object name: For calling methods from outside the class.
+- 3)Using `getattr()`: For dynamic method calls.
+- 4)Passing method references: For flexible method invocation.
+- 5)Using bound methods: For delayed execution or storing method calls.
+
+============================
+### 1. Using `self` Within the Class:
+===========================
+When calling an instance method from another method within the same class, you use the `self` keyword.
+
+```python
+class Example:
+    def method1(self):
+        print("Method 1 called")
+
+    def method2(self):
+        self.method1()  # Calling method1 using self
+
+obj = Example()
+obj.method2()  # This will call method2, which in turn calls method1
+```
+
+### 2. Using an Object Name:
+===========================
+When calling an instance method from outside the class, you use the object name.
+
+```python
+class Example:
+    def method1(self):
+        print("Method 1 called")
+
+obj = Example()
+obj.method1()  # Calling method1 using the object name
+```
+
+### Additional Ways:
+
+### 3. Using `getattr()`:
+===========================
+You can use the built-in `getattr()` function to call an instance method dynamically.
+
+```python
+class Example:
+    def method1(self):
+        print("Method 1 called")
+
+obj = Example()
+method_to_call = getattr(obj, 'method1')
+method_to_call()  # Calling method1 dynamically
+```
+
+### 4. Passing Method References:
+===========================
+You can pass a method reference to another function or method and call it from there.
+
+```python
+class Example:
+    def method1(self):
+        print("Method 1 called")
+
+def call_method(method):
+    method()
+
+obj = Example()
+call_method(obj.method1)  # Passing method1 as a reference
+```
+
+### 5. Using Bound Method:
+===========================
+When you access an instance method, it is bound to the instance. You can store this bound method in a variable and call it later.
+
+```python
+class Example:
+    def method1(self):
+        print("Method 1 called")
+
+obj = Example()
+bound_method = obj.method1
+bound_method()  # Calling the bound method
+```
+
+### Summary:
+
+These approaches offer flexibility in how you structure your code and interact with objects and their methods.

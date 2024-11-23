@@ -1,0 +1,55 @@
+
+Que : What is indentation error?
+===   --------------------------
+ => If I am not following the indentation rule in my python program then I will get indentation error.
+ 
+Que: what is pass?
+===  -------------
+ => pass is the keyword use to bypass the indentation block "OR" which tell python and PVM to not consider indentation block.
+
+Example:
+---------------------------------------------
+ticket=input("Have you entry-ticket : yes/no")
+if(ticket=="yes"):pass 
+----------------------------------------------
+
+-Note:--------------------------------------------------------------------------
+All the keyword in python start with small letter except "True" and "False".
+---------------------------------------------------------------------------
+
+
+write a python program which will accept two numerical value and decide bigest among them and check it's equality?
+==================================================================================================================
+a=int(input("Enter num1"))
+b=int(input("Enter num2"))
+# c=int(input())
+
+if(a>b):
+    print("Greates among a ,b is = {}".format(a))
+if(b>a):
+    print("Greates among a ,b is = {}".format(b))
+if(a==b):
+    print("All value among a,b is equall")
+
+==================================================================================================================
+write a python program which will accept any numerical value and decide positive or negative or zero by using simple if statement?
+==================================================================================================================
+write a python program which will accept any word and decide whether is a vowel or not?
+=========================================================================================
+write a python program which will accept three numerical value and find bigest among them by using simple if statement check for equality?
+============    =====================    =========================   =================   ======================  ==========================
+write a python which will accept any three numerical value and find the smallest among by using simple if and check for equlity
+==========================================================================================================================================
+write a python program which will accept any value from keyboard and display whether it's a alphbet or digit or alpha-numberic or special symbol?
+==========================================================================================================================================
+val=input("Enter value form keyboard = ")
+
+if(val.isalpha()):
+    print("Enter value ' {} '' is a alphabet".format(val))
+if(val.isdigit()):
+    print("Enter value ' {} ' is a digit".format(val))
+if(val.isalnum() and not val.isalpha() and not val.isdigit()):
+    print("Enter value ' {} ' is a alphnumbric".format(val))
+if(not val.isalpha() and not val.isdigit() and not val.isalnum()):
+    print("Enter value {} is a special symbol".format(val))
+ 

@@ -1,0 +1,25 @@
+Type of passing argument data to formal parameter
+# passing specific data
+    => By possitional Argument
+# Passing common data
+    => By Default Argument
+# Passing the data in any order in any format
+    => Keyword Argument
+# Passing the in variable length
+    => Variable Argument
+# Passing the data in keyword in variable length
+    => variable length Argument
+These many way are there to pass
+the data.
+
+Priority Rule for declare Variable: 
+===================================    
+    Posstional-variable-length=>*Variable-variable-length=>Default-variable-length =>**keyword-variable-length
+
+If Interviewer ask Function defnition?
+============================
+def function_name(possitional ,*var ,Default ,**KW-var): 
+
+If anyone where is keyword argument ?
+=============================
+    => keyword Argument is use in function call only.

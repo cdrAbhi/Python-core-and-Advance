@@ -1,0 +1,87 @@
+			======================================
+					list
+			======================================
+Index
+------------
+=>Purpose of list
+=>Properties of list
+=>Operations on list
+		a) indexing
+		b) slicing
+=>Pre-Defined Functions in list
+=>Inner OR Nested List
+=>Pre-Defined Functions in Nested list
+=>Programming Examples.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Properties of list
+-----------------------------------
+=>'list' is one of the pre-defined class and treated as list data type.
+=>The purpose of list data type is that "To store Multiple Values either of Same Type OR 
+    Different Type OR Both Types in single object with Unique and Duplicates".
+=>To store Values / Elements in list, They must be enclosed / Written inside of Square Brackets [ ] and 
+    Values must separated by Comma.
+=>Syntax:    varname=[val1,val2.......,val-n]	
+=>An object of list maintains Insertion Order(Orde whichever you use we get data in the same order).
+=>On the Object of List, we can perform Both Indexing and Slicing Operations.
+=>An object of list balongs to MUTABLE.
+=>We can create Two Types of List objects. They are
+		1) Empty List
+		2) Non-Empty List
+------------------------
+Empty List
+------------------------
+=>An Empty List is one which does not contain any Elements and whose length is 0
+=>Syntax1:    varname= [ ]
+=>Syntax2:    varname=list()
+------------------------
+Non-Empty List
+------------------------
+=>A Non-Empty List is one which  contains Elements and whose length is >0
+=>Syntax1:  varname=[Val1,Val2...,val-n]
+=>Syntax2:  varname=list(object)
+----------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+----------------------------------------------------------------------------------------------------------------------------------------------
+>>> lst1=[10,20,15,-45,10,12,999]
+>>> print(lst1,type(lst1))------------------------[10, 20, 15, -45, 10, 12, 999] <class 'list'>
+>>> lst2=[10,"Rossum",44.44,True,2+3j]
+>>> print(lst2,type(lst2))------------------------[10, 'Rossum', 44.44, True, (2+3j)] <class 'list'>
+------------------------------
+>>> lst2=[10,"Rossum",44.44,True,2+3j]
+>>> print(lst2,type(lst2),id(lst2))---------------[10, 'Rossum', 44.44, True, (2+3j)] <class 'list'> 2053689077888
+>>> lst2[0]---------------------------------------------10
+>>> lst2[-1]--------------------------------------------(2+3j)
+>>> lst2[0:3]-------------------------------------------[10, 'Rossum', 44.44]
+---------------------------------
+>>> lst2=[10,"Rossum",44.44,True,2+3j]
+>>> print(lst2,type(lst2),id(lst2))----------[10, 'Rossum', 44.44, True, (2+3j)] <class 'list'> 2053691470272
+>>> lst2[0]=100  # Index Based Updation
+>>> print(lst2,type(lst2),id(lst2))-----[100, 'Rossum', 44.44, True, (2+3j)] <class 'list'> 2053691470272
+>>> lst2[0:2]=[200,"GUIDO"]   # Slice Based Updation
+>>> print(lst2,type(lst2),id(lst2))------[200, 'GUIDO', 44.44, True, (2+3j)] <class 'list'> 2053691470272
+>>> lst2[::2]=[300,55.55,4+5.5j]  # Slice Based Updation
+>>> print(lst2,type(lst2),id(lst2))-----[300, 'GUIDO', 55.55, True, (4+5.5j)] <class 'list'> 2053691470272
+---------------------------------------------------
+>>> lst1=[]
+>>> print(lst1,type(lst1))-----------------[] <class 'list'>
+>>> len(lst1)----------------------------------0
+>>> lst2=list()
+>>> print(lst2,type(lst2))-----------------[] <class 'list'>
+>>> len(lst2)---------------------------------0
+--------------------------------------------------------------------
+>>> lst1=[10,"Vamshi",11.11,'HYD']
+>>> print(lst1,type(lst1))---------------[10, 'Vamshi', 11.11, 'HYD'] <class 'list'>
+>>> len(lst1)--------------------------------4
+------------------------------------------------------------------
+>>> s="PYTHON"
+>>> print(s,type(s))-------------------PYTHON <class 'str'>
+>>> lst=list(s)
+>>> print(lst,type(lst))--------------['P', 'Y', 'T', 'H', 'O', 'N'] <class 'list'>
+---------------
+>>> lst=[10,20,30,40,255]
+>>> print(lst,type(lst))-------------[10, 20, 30, 40, 255] <class 'list'>
+>>> b=bytes(lst)
+>>> print(b,type(b))---------------b'\n\x14\x1e(\xff' <class 'bytes'>
+>>> lst1=list(b)
+>>> print(lst1,type(lst1))---------[10, 20, 30, 40, 255] <class 'list'>
+=================================x=========================================

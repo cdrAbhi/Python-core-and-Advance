@@ -1,0 +1,77 @@
+a=2
+b=2
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+a=2.3
+b=2.3
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+a=2+3j
+b=2+3j
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+
+a=True
+b=True
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+
+print("==============================================================================")
+
+a=[1,2,4]
+b=[1,2,4]
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+a=(1,2,4)
+b=(1,2,4)
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+
+a={"a":1,"b":2,"c":4}
+b={"a":1,"b":2,"c":4}
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+a={1,2,4}
+b={1,2,4}
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+
+a=frozenset({1,2,4})
+b=frozenset({1,2,4})
+print("value of a = ",a,"and id of a = ",id(a))
+print("value of b = ",b,"and id of b = ",id(b))
+
+print("===============================================================")
+
+# value of a =  2 and id of a =  139665929520448
+# value of b =  2 and id of b =  139665929520448
+# value of a =  2.3 and id of a =  139665926043152
+# value of b =  2.3 and id of b =  139665926043152
+# value of a =  (2+3j) and id of a =  139665925445680
+# value of b =  (2+3j) and id of b =  139665925445680
+# value of a =  True and id of a =  139665929400480
+# value of b =  True and id of b =  139665929400480
+# ==============================================================================
+# value of a =  [1, 2, 4] and id of a =  139665925873536
+# value of b =  [1, 2, 4] and id of b =  139665925134912
+# value of a =  (1, 2, 4) and id of a =  139665925386176
+# value of b =  (1, 2, 4) and id of b =  139665925386176
+# value of a =  {'a': 1, 'b': 2, 'c': 4} and id of a =  139665925806912
+# value of b =  {'a': 1, 'b': 2, 'c': 4} and id of b =  139665925807168
+# value of a =  {1, 2, 4} and id of a =  139665925129600
+# value of b =  {1, 2, 4} and id of b =  139665925129376
+# value of a =  frozenset({1, 2, 4}) and id of a =  139665925130272
+# value of b =  frozenset({1, 2, 4}) and id of b =  139665925130720
+# ============================================================
+
+
+# ** Process exited - Return Code: 0 **
+# Press Enter to exit terminal

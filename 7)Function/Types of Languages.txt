@@ -1,0 +1,31 @@
+			========================================================
+						Types of Languages
+			========================================================
+=>The Purpose of Functions is that "To Perform any Operation OR Task and Provides Code Re-Usability".
+=>In IT, we have Two Types of Languages. They are
+
+			1.  Un-Structured Programming Languages
+			2.  Structured Programming Languages
+****************************************************************************************************************************************************
+1.  Un-Structured Programming Languages
+****************************************************************************************************************************************************
+=>In Un-Structured Programming Languages, we don't have the concept of Functions. So that whose related applications having the following limitations.
+			1. Application Development Time is More
+			2. Application Memory space is More
+			3. Application  Execution  Time is More
+			4. Application Performnace is Degraded
+			5. Redundency (Duplication or Replication)of the code  is More
+
+Examples:  GW-BASIC
+****************************************************************************************************************************************************
+2.  Structured Programming Languages
+****************************************************************************************************************************************************
+=>In Structured Programming Languages, we have the concept of Functions. So that whose related applications having the following Advantages.
+			1. Application Development Time is Less
+			2. Application Memory space is Less
+			3. Application  Execution  Time is Less
+			4. Application Performnace is Enhanced (Improved)
+			5. Redundency (Duplication or Replication)of the code  is Minimized
+
+Examples: C,C++,Java,PYTHON,C#.net.......etc
+****************************************************************************************************************************************************

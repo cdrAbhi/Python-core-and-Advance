@@ -1,0 +1,27 @@
+			=================================================================
+					Exception Handling---Most Imp
+			=================================================================
+Index
+--------------------------------------------------------------
+=>Purpose of Exception Handling
+=>What is Exception
+=>What is Exception Handling
+=>Types of Errors
+		a) Compile Time Errors
+		b) Logical Errors
+		c) Runtime Errors
+=>Programming Examples
+=>Building Points in Exception Handling
+=>Types of Exceptions
+		a) Pre-Defined OR Built-In Exceptions
+		b) Programmer OR User OR Custom Defined Exceptions
+=>Keywords for Handling Exception 
+		a) try
+		b) except
+		c) else
+		d) finally
+		e) raise
+=>Programming Examples
+=>Steps for Developing Programmer OR User OR Custom Defined Exceptions
+=>Programming Examples / Case Studies
+===================================================================

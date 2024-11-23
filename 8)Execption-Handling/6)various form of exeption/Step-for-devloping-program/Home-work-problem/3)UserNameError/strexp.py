@@ -1,0 +1,1 @@
+class AlpNumErr(Exception):pass

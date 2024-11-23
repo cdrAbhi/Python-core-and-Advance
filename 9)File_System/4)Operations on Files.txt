@@ -1,0 +1,69 @@
+		==============================================
+				Operations on Files
+		==============================================
+=>On the files, we can perform Two Types of Operations. They are
+		1) Write Operation
+		2) Read Operation.
+------------------------------
+1) Write Operation:
+------------------------------
+=>The  purpose of write operation is that " To transfer or save the object data of main memory as record in the file of secondary memory".
+=>Steps:		
+		1) Choose the File Name
+		2) Open the File Name in Write  Mode   
+		3) Perform cycle of Write Operations.
+=>While we are performing write operations, we get the following exceptions.
+			a) IOError
+			b) OSError
+			c) FileExistError 
+------------------------------
+2) Read Operation:
+------------------------------
+=>The  purpose of read operation is that " To transfer or read the record from file of secondary memory into the object of main memory".
+=>Steps
+		a) Choose the file name
+		b) Open the file name in Read Mode  
+		c) Perform cycle of read operations.
+=>While we are performing read operations, we get the following exceptions.
+		a) FileNotFoundError
+		b) EOFError
+================================x==================================
+
+
+
+
+
+
+
+============================================================================
+When performing write operations in Python, we may encounter the following exceptions:
+
+1. **`IOError`**: This occurs when an input/output operation fails, such as trying to write to a closed file.
+----------------------
+   ```python
+   try:
+       file = open('example.txt', 'w')
+       file.close()
+       file.write('Hello, world!')  # Writing to a closed file
+   except IOError as e:
+       print(f"IOError: {e}")
+   ```
+
+2. **`OSError`**: This happens when a system-related error occurs, such as a disk error during a write operation.
+   ```python
+   try:
+       with open('/path/to/protected/file.txt', 'w') as file:
+           file.write('Hello, world!')  # Writing to a file without proper permissions
+   except OSError as e:
+       print(f"OSError: {e}")
+   ```
+
+3. **`FileExistsError`**: This is raised when trying to create a file that already exists using a mode that doesn't allow overwriting.
+   ```python
+   try:
+       with open('existing_file.txt', 'x') as file:  # 'x' mode for exclusive creation
+           file.write('Hello, world!')
+   except FileExistsError as e:
+       print(f"FileExistsError: {e}")
+   ```
+===========================================================================================

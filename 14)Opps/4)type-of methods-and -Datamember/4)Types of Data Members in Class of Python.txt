@@ -1,0 +1,126 @@
+			============================================================
+					Types of Data Members in Class of Python
+			============================================================
+=>In a Class of Python, we can define Two Types of Data Members. They are
+
+				1. Instance Data Members
+				2. Class Level Data Members
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Instance Data Members
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Instance Data Members are those which are used for storing Specific Values
+=>Instance Data Members Memory Space Created Each and Every Time when we create an object and Instance Data members 
+    are called Object Level Data Members.
+=>Programatically Instance Data Members can be specified in 3 ways. They are
+				a) Through an object
+				b) Through an Instance Method
+				c)  Through a Constructor
+=>Instance Data members must be accessed w.r.t Object Name and self.
+				Syntax:   objectname.Instance Data Member Name
+									(OR)
+						self.Instance Data Member Name
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Class Level Data Members
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Class Level Data Members are those which are used for storing Common Values for all the objects of Same Class
+=>Class Level Data Members are those  Memory Space Created Only Once irrespective of Number of Objects are created.
+=>Programatically Class Level Data Members can be specified in 2 ways. They are
+				a) Inside of Class definition
+				b) Inside of Class Level Method
+=>Class Level Data members can be accessed w.r.t Class Name OR cls  or ObjectName or self
+				Syntax:   classname.Class Level Data Member Name
+								(OR)
+						cls.Class Level Data Member Name
+								(OR)
+						objectname.Class Level Data Member Name
+								(OR)
+						self.Class Level Data Member Name
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------
+Sure, let's go through each way to specify instance data members with practical examples in Python. We'll keep it simple and straightforward.
+
+### a) Through an Object
+=====================
+You can directly assign values to instance data members using an object.
+
+#### Example:
+```python
+class Person:
+    pass
+
+# Create an object of the class
+p1 = Person()
+
+# Assign instance data members through the object
+p1.name = "Alice"
+p1.age = 30
+
+# Accessing instance data members
+print(p1.name)  # Output: Alice
+print(p1.age)   # Output: 30
+```
+
+### b) Through an Instance Method
+===================================
+You can define a method in the class that assigns values to instance data members.
+
+#### Example:
+```python
+class Person:
+    def set_details(self, name, age):
+        self.name = name
+        self.age = age
+
+# Create an object of the class
+p2 = Person()
+
+# Assign instance data members through an instance method
+p2.set_details("Bob", 25)
+
+# Accessing instance data members
+print(p2.name)  # Output: Bob
+print(p2.age)   # Output: 25
+```
+
+### c) Through a Constructor
+==============================
+You can use the constructor method (`__init__`) to initialize instance data members when an object is created.
+
+#### Example:
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# Create an object of the class, initializing instance data members through the constructor
+p3 = Person("Charlie", 20)
+
+# Accessing instance data members
+print(p3.name)  # Output: Charlie
+print(p3.age)   # Output: 20
+```
+
+### Summary
+
+1. **Through an Object**: Directly assign values to attributes using the object.
+2. **Through an Instance Method**: Use a method defined in the class to assign values to attributes.
+3. **Through a Constructor**: Use the constructor to initialize attributes at the time of object creation.
+
+These examples demonstrate the different ways to specify instance data members in a class.---------------
+
+-----------------------------------------------------------------------------------------------------------------------------

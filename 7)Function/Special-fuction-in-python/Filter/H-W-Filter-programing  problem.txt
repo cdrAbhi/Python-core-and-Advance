@@ -1,0 +1,113 @@
+# lst=[10,-2,-3,4,45,12,13]
+# def pos(val):
+#     if(val>0):
+#         return True
+#     else:
+#         return False
+# lst=list(filter(pos,lst))
+# print(lst)
+
+# write a python program which will accept a line of text and obtains only vowels.
+
+# lst=input("Enter a line of test")
+
+# lst=list(filter(lambda word: ('a' in word) or ('e' in word) or ('i' in word) or ('o' in word) or ('u' in word),lst))
+
+# print(lst)
+
+
+# write a python program which will accept line of text and obtain those word which are containing vowel words.
+# input : Sky is Blue and why not Black
+# output:[is Blue and not red]
+#       :[Sky why]
+# lst=input("Enter a line").split()
+# lstv=list(filter(lambda word: (word.islpha) and ('a' in word) or ('e' in word) or ('i' in word) or ('o' in word) or ('u' in word),lst))
+# lstc=list(filter(lambda word: (word.islpha) and ('a' not in word) and ('e' not in word) and ('i' not in word) and ('o' not in word) and ('u' not in word),lst))
+# print("Vowel word : {}".format(" ".join(lstv)))
+# print("Constant word : {}".format(" ".join(lstc)))
+
+# write a python program which will accept a line of text and obtain uppercase vowel ,lowercas vowel ,upperCaseConsonant and lowerCaseConsonant word
+# def upper(word):
+#     c=False
+#     for ch in word:
+#         if ch.isupper() and (ch not in 'aA') and (ch not in 'eE') and (ch not in "Ii") and (ch not in "oO") and (ch not in "uU"):
+#             c=True
+#         else:
+#             return False
+#     else:
+#         return c
+        
+# def lower(word):
+#     c=False
+#     for ch in word:
+#         if ch.islower() and (ch not in 'aA') and (ch not in 'eE') and (ch not in "Ii") and (ch not in "oO") and (ch not in "uU"):
+#             c=True
+#         else:
+#             return False
+#     else:
+#         return c
+    
+# lst=input("Enter a line").split()
+# lstUv=list(filter(lambda word: word.isupper()and (('A' in word) or ('E' in word) or ('I' in word) or ('O' in word) or ('U' in word)),lst))
+# lstLv=list(filter(lambda word: word.islower() and  (('a' in word) or ('e' in word) or ('i' in word) or ('o' in word) or ('u' in word)),lst))
+# lstUc=list(filter(lambda word: word.isupper() and ('A' not in word) and ('E' not in  word) and ('I' not in  word) and ('O' not in  word) and ('U' not in  word),lst))
+# lstLc=list(filter(lambda word: word.islower() and ('a' not in  word) and ('e' not in  word) and ('i' not in  word) and ('o' not in  word) and ('u' not in  word),lst))
+
+# print("UpperCase Vowel word : {}".format(" ".join(lstUv)))
+# print("LowerCase Vowel word : {}".format(" ".join(lstLv)))
+# print("UpperCase Constant word : {}".format(" ".join(lstUc)))
+# print("LowerCase Constant word : {}".format(" ".join(lstLc)))
+
+
+# write a python program which accept line of text and obtain special sysmbols list and numbrics list only.
+
+# ln=input("Enter text line :") #
+
+# lsn=(filter(lambda word: word.isdigit(),ln))
+# lss=filter(lambda word: not word.isalnum(),ln)
+
+# print("list of Numerical value : {}".format((",").join(lsn)))
+# print("list of special-symbol value : {}".format((",").join(lss)))
+
+
+# write a python program which accept list of numerical value and obtain even number and odd number supretlly .
+# print("====word's as you want and Enter E to exit=====")
+# lst=[]
+# while True:
+#     w=input()
+#     if w.upper()=="E":
+#         break
+#     elif not w.isdigit():
+#         print("Invalid input")
+#     else:
+#         lst.append(int(w))
+        
+# lste=list(filter(lambda n: n%2==0,lst))        
+# lsto=list(filter(lambda n: n%2!=0,lst)) 
+
+# print("Even numerical value list : {}".format(lste))
+# print("Odd numerical value list : {}".format(lsto))
+
+
+# write a python program which accept list of word and get those word whose length ranges from 3 to 5.
+# print("====word's as you want and Enter # to exit=====")
+# lst=[]
+# while True:
+#     w=input()
+#     if w.upper()=="#":
+#         break
+#     elif not w.isalpha():
+#         print("Invalid input")
+#     else:
+#         lst.append(w)
+        
+# lste=list(filter(lambda w:1<=len(w)<=3,lst))        
+
+# print("All length word list : {}".format(lste))
+# print("1 to 3 range length word list : {}".format(lste))
+
+
+
+
+
+

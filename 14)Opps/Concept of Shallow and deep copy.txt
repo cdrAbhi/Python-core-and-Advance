@@ -1,0 +1,9 @@
+Key Points:
+
+=> Shallow copy and deep copy are the same for immutable objects.
+=> Shallow copy only copies the outermost object, not the inner objects that's mean outer most object have different memory address but inner imutable object have same memory address as original object.
+=> Deep copy creates entirely new objects recursively for everything within the original.
+
+overall
+======
+that's mean deep copy and shallow copy are same for imutable datatype or recursive immutable data type.

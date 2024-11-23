@@ -1,0 +1,49 @@
+			==============================================================
+					Functions in Python (Functional Programming)--8 Days
+			==============================================================
+Index
+-------------------------------------------------------------------------------------------
+=>Purpose of Functions
+=>Types of Languages
+		a) Un-Structured Programming Languages
+		b) Structured Programming Languages
+=>Definition of Function
+=>Advantages of Functions
+=>Parts of Functions
+=>Phases in Functions
+=>Syntax for Defining Functions in Python
+=>Number of approaches to define or develop functions
+=>Programming Examples
+-----------------------------------------------------------------------------------------
+=>Arguments and Parameters
+=>Types of Arguments
+		a) Possitional Arguments
+		b) Default Arguments
+		c) Keyword Arguments
+		d) Variable Length Arguments
+		e) Keyword Variable Length Arguments
+=>Programming Examples on every Types of Arguments
+-----------------------------------------------------------------------------------------
+=>Global and Local variables
+=>Programming Examples
+=>global keyword and globals()
+=>Programming Examples
+-----------------------------------------------------------------------------------------
+=>Anonymous Functions OR Lambda Functions
+=>Implementation of Anonymous Functions OR Lambda Functions
+=>Programming Examples
+---------------------------------------------------------------------------------------------
+=>List Comprehension
+=>Set Comprehension
+=>Dict Comprehension
+=>Tuple Comprehension( Not there---but generator--Type casted to tuple comprehension)
+=>Programming Examples
+----------------------------------------------------------------------------------------------
+=>Special Functions in Python
+	    1) filter()  with Normal Functions and Anonymous functions
+	    2) map()  with Normal Functions and Anonymous functions
+	    3) reduce() with Normal Functions and Anonymous functions
+=>Programming Examples
+===================================================================================
+
+

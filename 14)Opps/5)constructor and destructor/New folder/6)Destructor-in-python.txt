@@ -1,0 +1,163 @@
+In Python, constructors are special methods called when an object is instantiated. The constructor method is named `__init__`. 
+
+### Default Constructor
+
+A default constructor is one that does not take any arguments (other than `self`). It initializes the object with default values.
+
+**Example:**
+
+```python
+class DefaultConstructor:
+    def __init__(self):
+        self.value = 0  # Default value
+
+    def display(self):
+        print(f"The value is: {self.value}")
+
+# Creating an object of the DefaultConstructor class
+obj = DefaultConstructor()
+obj.display()  # Output: The value is: 0
+```
+
+### Parameterized Constructor
+
+A parameterized constructor is one that takes arguments in addition to `self`. These arguments are used to initialize the object with specific values.
+
+**Example:**
+In Python, destructors are special methods that are called when an object is about to be destroyed. The destructor method in Python is named `__del__`. However, unlike constructors, destructors are less commonly used, as Python's garbage collector handles most of the cleanup automatically.
+
+### Types of Destructors
+
+1. **Default Destructor**
+2. **Custom Destructor**
+
+### Default Destructor
+
+Python provides a default destructor that is automatically called when an object goes out of scope or is explicitly deleted using the `del` keyword. The default destructor does not require any explicit definition.
+
+**Example:**
+
+```python
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+        print(f"Object created with value: {self.value}")
+
+    def __del__(self):
+        print(f"Object with value {self.value} is being destroyed")
+
+# Creating an object
+obj = MyClass(10)
+# Deleting the object explicitly
+del obj
+```
+
+**Output:**
+```
+Object created with value: 10
+Object with value 10 is being destroyed
+```
+
+In this example, the `__del__` method is called automatically when the object `obj` is deleted using the `del` keyword.
+
+### Custom Destructor
+
+A custom destructor is explicitly defined by overriding the `__del__` method. This allows you to include custom cleanup code that should be executed when an object is destroyed.
+
+**Example:**
+
+```python
+class FileHandler:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.file = open(file_name, 'w')
+        print(f"File {self.file_name} opened")
+
+    def write_data(self, data):
+        self.file.write(data)
+
+    def __del__(self):
+        self.file.close()
+        print(f"File {self.file_name} closed")
+
+# Creating an object and writing data to the file
+file_handler = FileHandler("example.txt")
+file_handler.write_data("Hello, World!")
+# Deleting the object explicitly
+del file_handler
+```
+
+**Output:**
+```
+File example.txt opened
+File example.txt closed
+```
+
+In this example:
+- The `FileHandler` class opens a file when an object is created and writes data to it.
+- The custom destructor (`__del__` method) ensures that the file is properly closed when the object is destroyed.
+
+### Notes on Destructors in Python
+
+- Destructors are not guaranteed to be called immediately when an object goes out of scope. The timing of destructor calls depends on Python's garbage collector.
+- If an object has circular references, the `__del__` method might not be called because the garbage collector cannot determine the order in which to destroy the objects.
+- Explicitly calling `del obj` decreases the reference count of the object by one. If the reference count becomes zero, the object is destroyed, and the destructor is called.
+
+### Summary
+
+- **Default Destructor:** Automatically provided by Python, requires no explicit definition.
+- **Custom Destructor:** Defined by overriding the `__del__` method to include custom cleanup code.
+```python
+class ParameterizedConstructor:
+    def __init__(self, value):
+        self.value = value  # Value passed during object creation
+
+    def display(self):
+        print(f"The value is: {self.value}")
+
+# Creating an object of the ParameterizedConstructor class with a specific value
+obj = ParameterizedConstructor(10)
+obj.display()  # Output: The value is: 10
+```
+
+### Comparison
+
+- **Default Constructor:**
+  - No additional arguments.
+  - Initializes objects with default values.
+  
+- **Parameterized Constructor:**
+  - Takes additional arguments.
+  - Initializes objects with specific values provided during object creation.
+
+### Example with Both Constructors
+
+Here is an example where a class can handle both default and parameterized constructors:
+
+```python
+class MixedConstructor:
+    def __init__(self, value=0):  # Default value is 0 if no argument is passed
+        self.value = value
+
+    def display(self):
+        print(f"The value is: {self.value}")
+
+# Creating an object using the default constructor
+default_obj = MixedConstructor()
+default_obj.display()  # Output: The value is: 0
+
+# Creating an object using the parameterized constructor
+param_obj = MixedConstructor(20)
+param_obj.display()  # Output: The value is: 20
+```
+
+In this example:
+- `default_obj` uses the default value of 0 because no argument is provided.
+- `param_obj` uses the value 20 because it is provided during object creation.
+
+This approach allows you to create flexible constructors that can work with or without arguments.
+
+
+ note:
+=====
+Overall when program execution process completed then GC deallocate memory space or delete object.

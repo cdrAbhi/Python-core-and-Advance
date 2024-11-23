@@ -1,0 +1,36 @@
+			===============================================
+				Types of Inheritances OR Re-Usable Techniques
+			===============================================
+=>Type of Inheritance is one of the Diagram OR Pattern Or Model, which makes us Understand How the features are Inherited from Base Class into Derived Class.
+=>In Python Programming, we have 5 Types of Inheritances. They are
+
+			1. Single Inheritance
+			2. Multi Level Inheritance
+			3. Hierarchical Inheritance
+			4. Multiple Inheritance
+			5. Hybrid Inheritance
+====================================x==============================================
+
+
+what are difference btwn reusability by module,pakages of function  and inheritance reusability?
+=====================================================================
+module,pakages reusability : whenever we use function through modul and pakages when we import they take memory space at once.
+------------------------------------- 
+inheritance reusability : whenever we inherit method to one class to another class they won't take any memory space such type of method so inheritanc based application -----------------------------   are light based application
+
+
+
+
+what are the difference between funtion and module?
+=================================================================
+Key Points
+========
+Module Object:
+-------------------
+   • Role: Serves as a container for functions, classes, and variables,
+   • Memory Usage: Generally smaller because it only stores references and metadata (e.g.,module name, file path).
+
+Function Code and Other Elements:
+-----------------------------------------------
+    • Role: Contains the actual implementation of functions, classes, and data.
+    • Memory Usage: Can be larger, depending on the complexity and size of the code.

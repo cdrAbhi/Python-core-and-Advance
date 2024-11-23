@@ -1,0 +1,65 @@
+Pre-Defined Functions present in frozenset
+==========================================
+NOT_POSSIBLE
+===============
+
+1)clear()-----x
+2)add()-----x
+3)remove()-----x 
+4)discard-----x
+5)update()-----x
+6)symmetric_difference_update()-----x
+7)intersection_update()-----x
+8)difference_update()-----x
+13) symmetric_difference_update()-----x
+
+
+POSSIBLE
+===========
+6) copy()---PossibIe------Deep Copy
+======================
+S3=S1.Copy(s2)
+=========================
+6) isdisjoint()
+7) issuperset()
+8) issubset()
+9) union()
+10) intersection()
+11) difference()
+12) symmetric_difference()
+
+
+============================================================
+
+POSSIBLE
+===========
+6) copy()---PossibIe------Deep Copy
+======================
+S3=S1.Copy(s2)
+=========================
+NOTE:
+fs1 =frozenset(20,20,30)
+print(type(fs1),id(fs1)}) ----------<class 'frozenset'> 2068835340960
+fs2=fs1 .copy()
+print(type(fs2),id(fs2)})----------- <class 'frozenset'> 2068835340960
+
+
+General, Immutable Object content is Not Possible to copy( in the case of tuple). Where as in the
+case of frozenset, we are able to copy its content to another frozenset object. Here Original frozenset
+object and copied frozenset object contains Same Address and Not at all possible to Modify I Change
+their content.
+=>frozenset does not contain the following Functions
+NOT_POSSIBLE
+===============
+
+1)clear()-----x
+2)add()-----x
+3)remove()-----x 
+4)discard-----x
+5)update()-----x
+6)symmetric_difference_update()-----x
+7)intersection_update()-----x
+8)difference_update()-----x
+13) symmetric_difference_update()-----x
+
+

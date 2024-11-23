@@ -1,0 +1,48 @@
+
+# write a python program which will accept two numerical value and decide bigest among them ?
+# ==================================================================================================================
+# a=int(input("Enter num1"))
+# b=int(input("Enter num2"))
+# # c=int(input())
+# if(a>b):
+#     print("Greates among a and b is = {}".format(a,b,a))
+# else:
+#     print("Greates among a and b is = {}".format(a,b,b))
+
+# ==================================================================================================================
+# write a python program which will accept any numerical value and decide positive or negative or zero by using simple if statement?
+# ==================================================================================================================
+# write a python program which will accept any word and decide whether is a vowel or not?
+# =========================================================================================
+# write a python program which will accept three numerical value and find bigest among them by using simple if statement check for equality?
+# ============    =====================    =========================   =================   ======================  ==========================
+# write a python which will accept any three numerical value and find the smallest among by using simple if and check for equlity
+# ==========================================================================================================================================
+# write a python program which will accept any value from keyboard and display whether it's a alphbet or digit or alpha-numberic or special symbol by using the else if statement?
+# ==========================================================================================================================================
+
+# val=input("Enter value")
+# if (val.isalpha()):
+#     print("Enter value val:{} is alphabet".format(val))
+# elif (val.isdigit()):
+#     print("Enter value val:{} is alphabet".format(val))
+# elif (val.isalnum()):
+#     print("Enter value val:{} is alphaNumberic".format(val))
+# else:
+#     print("Enter value :{} is special sysmbol".format(val))
+    
+# ==================================================================================================================
+# write a python program which will accept any numerical value and display the name of the digit:
+# ==================================================================================================================
+n = int(input("Enter digit from 0 to 9 : "))
+lst = ["zero","one","two","three","four","five","six","seven","eight","nine"]
+print(lst[n] if 0<=n<=9 else "negative {}".format(lst[-1*(n)]) if -9<=n<=-1 else "negavite number" if n<-9 else "Enter value is positive number" )
+
+print("===============================solve using dict========================================================")
+
+n = int(input("Enter digit"))
+dict = {0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine",-1:"-one",-2:"-two",-3:"-three",-4:"-four",-5:"-five",-6:"-six",-7:"-seven",-8:"-eight",-9:"-nine"}
+print(dict.get(n) if dict.get(n)!=None else "Enter value is Negavite number" if n<0 else "Enter value is positive number" )
+
+
+

@@ -1,0 +1,13 @@
+# write a python program which will implemet the following
+1)To implement fund transfer from one account to another account by using the following sample table
+=====================
+Acno    Cname   Bal
+======================
+1000    RS      20000
+2000    TR      15000
+3000    MS      10000
+4000    DR      5000
+========================
+
+
+

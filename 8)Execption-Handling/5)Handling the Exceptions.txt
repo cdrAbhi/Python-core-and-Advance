@@ -1,0 +1,48 @@
+		=======================================================================
+					Handling the Exceptions
+							(OR)
+					Keywords for the Handling the Exceptions
+		=======================================================================
+=>Handling the exceptions are nothing but Converting Technical error message into user-friendly error messages.
+=>For Converting Technical error message into user-friendly error message, In Python Programming, we have 5 Keywords. They are.
+				1. try
+				2. except
+				3. else
+				4. finally
+				5. raise
+===============================================================================================
+Syntax for Handling the Exceptions
+===============================================================================================
+		
+		try:
+		     ---------------------------------------------
+		     Block of statements generates
+		     exceptions
+		     ---------------------------------------------
+		except  <exception-class-name-1>:
+		      ----------------------------------------------
+		      Block of Statements generates 
+		      User-Friendly Error Message
+		      ----------------------------------------------
+		except  <exception-class-name-2>:
+		      ----------------------------------------------
+		      Block of Statements generates 
+		      User-Friendly Error Message
+		      ----------------------------------------------
+		---------------------------------------------------------
+		except  <exception-class-name-n>:
+		      ----------------------------------------------
+		      Block of Statements generates 
+		      User-Friendly Error Message
+		      ----------------------------------------------
+		else:
+		      -----------------------------------------------
+		      Block of statements
+		      generates Result
+		      ----------------------------------------------
+		finally:
+		      -----------------------------------------------
+		      Block of statments exceutes
+		      Compulsorily
+		      -----------------------------------------------
+===============================================================================================		       

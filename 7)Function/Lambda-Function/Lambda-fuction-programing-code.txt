@@ -1,0 +1,205 @@
+# write a python program which can accept any word and convert into upper-case
+# while True:
+#     val=input("Enter val : ")
+#     lst=val.split()
+#     for s in lst:
+#         if not s.isalpha():
+#             print("Invalid input : {}".format(s))
+#             break
+#     else:
+#         break
+        
+# res = lambda fr : fr.upper()
+# print(res(val))
+
+
+# write a python program which will find the  number of word in a given line of text by using annomouse function.
+
+# tl=input("Enter text : ")
+# countword=lambda tl:len(tl.split())
+# res=countword(tl)
+# print(res)
+
+
+# write a python program which will find the  number of a specific word in a given line of text by using annomouse function.
+
+
+# tl=input("Enter text : ")
+# word=input("Enter word to be search in text: ")
+# countword=lambda tl,word:tl.count(word)
+# res=countword(tl,word)
+# print(res)
+
+#write a python program which will accept two nomerical values and find the bigest and check for equality by using annomous function.
+# write a python program which will accept two numerical value and find the smallest and chech for equlity by using annomonous function.
+
+
+# val1=float(input("Enter val : "))
+# val2=float(input("Enter val : "))
+
+# findbig=lambda a,b: a if a>b else b if b>a else "Both values are equal" 
+# findsmall=lambda a,b: b if a>b else a if b>a else "Both values are equal"
+
+# res1=findbig(val1,val2)
+# res2=findsmall(val1,val2)
+
+# print(res1)
+# print(res2)
+
+
+# write a python program which will accept list of value and find the max and min by using annomonous function.
+
+# ls=[]
+# print("Enter value to be list OR Enter e to exit:")
+# while True:
+#     v=input()
+#     if(v.upper()=="E"):
+#         break
+#     else:
+#         ls.append(int(v))
+        
+# mx=ls[0]
+# mn=ls[0]
+# findmax=lambda val,mx: val if val>mx else mx
+# findmin=lambda val,mn: val if val<mn else mn
+
+# for val in ls:
+#     mx=findmax(val,mx)
+#     mn=findmin(val,mn)
+    
+# print("max{} : {}".format(ls,mx))   
+# print("min{} : {}".format(ls,mn))         
+
+# write a python program which will accept any word as value and decide wether it is vowel or not without using membership operator and by using annomonous function.
+
+# s=input("Enter")
+# s="ram"
+# res=lambda s: ("").join([ "vowel" if v=='a' or v=='e' or v=='i' or v=='o' or v=='u' else "" for v in s])  
+# print("word {} is vowel".format(s) if res(s) else "word {} is not vowel".format(s))    
+
+# write a python program which will develop menu deriven arithmetic operation  by using annomonous function.
+
+
+# add=lambda a,b: a+b 
+# sub=lambda a,b: a-b 
+# mul=lambda a,b: a*b 
+# div=lambda a,b: a/b 
+# fdiv=lambda a,b: a//b 
+# mdiv=lambda a,b: a%b 
+# exp=lambda a,b: a**b
+
+# while True:
+#     print("*"*50)
+#     print("=======Arithematic Operation=========")
+#     print("\tFor Addition Operation enter : 1")
+#     print("\tSubstraction Operation enter : 2")
+#     print("\tMultiplication Operation enter : 3")
+#     print("\tDivision Operation enter : 4")
+#     print("\tfloar tDivision Operation enter : 5")
+#     print("\tModulo Division Operation enter : 6")
+#     print("\tExponentiation Operation enter : 7")
+#     print("\tExit : 8")
+#     print("*"*50)
+     
+    
+#     o=int(input("Please select operation : "))
+    
+#     match o:
+#         case 1:
+#             print("===Enter Two value for Addition=== ")
+#             a,b=int(input()),int(input())
+#             print("Addition ({}+{}) = {}".format(a,b,add(a,b)))
+            
+#         case 2:
+#             print("===Enter Two value for Substraction=== ")
+#             a,b=int(input()),int(input())
+#             print("Substraction ({}-{}) = {}".format(a,b,sub(a,b)))
+            
+#         case 3:
+#             print("===Enter Two value for Multiplication=== ")
+#             a,b=int(input()),int(input())
+#             print("Multiplication ({}x{}) = {}".format(a,b,mul(a,b)))
+            
+#         case 4:
+#             print("===Enter Two value for Division=== ")
+#             a,b=int(input()),int(input())
+#             print("Division ({}/{}) = {}".format(a,b,div(a,b)))
+            
+#         case 5:
+#             print("===Enter Two value for Floar-Division=== ")
+#             a,b=int(input()),int(input())
+#             print("Floar-Division ({}//{}) = {}".format(a,b,fdiv(a,b)))
+            
+#         case 6:
+#             print("===Enter Two value for Modulo-Division=== ")
+#             a,b=int(input()),int(input())
+#             print("Modulo-Division ({}%{}) = {}".format(a,b,mdiv(a,b)))
+            
+#         case 7:
+#             print("===Enter Two value for Exponentiation=== ")
+#             a,b=int(input("Enter base : ")),int(input("Enter power : "))
+#             print("Exponentiation ({}{}) = {}".format(a,b,exp(a,b)))
+            
+#         case 8:
+#             print("Thank you for using this program")
+#             break
+#         case _:
+#             print("You are selcting wrong operator")
+
+
+# write a python program which will implement menu deriven tempreture conversion scale by using annomonous function.
+# cf=lambda c: (c * 9/5) + 32
+# ck=lambda c: (c * 9/5) + 32 
+# fc=lambda f: (f - 32) * 5/9
+# fk=lambda f: (f - 32) * 5/9 + 273.15 
+# kc=lambda k: k - 273.15 
+# kf=lambda k: (k - 273.15) * 9/5 + 32
+
+# while True:
+#     print("*"*50)
+#     print("=======Tempreture Conversion option=========")
+#     print("\tcelcias to fornheight : 1")
+#     print("\tcelcias to kelvin enter : 2")
+#     print("\tfornheight to celcias enter : 3")
+#     print("\tfornheight to kelvin : 4")
+#     print("\tkelvin to celcias : 5")
+#     print("\tkelvin to fornheight: 6")
+#     print("\texit  : 7")
+#     print("*"*50)
+    
+    
+#     option=int(input("Please select operation : "))
+    
+#     match option:
+#         case 1:
+#             a=int(input("Enter celcias value : "))
+#             print("celsius_to_fahrenheit {} = {}".format(a,cf(a)))
+            
+#         case 2:
+#             a=int(input("Enter celcias value : "))
+#             print("celsius_to_kelvin {} = {}".format(a,ck(a)))
+            
+#         case 3:
+#             a=int(input("Enter fornheight value : "))
+#             print("fahrenheit_to_celsius {} = {}".format(a,fc(a)))
+            
+#         case 4:
+#             a=int(input("Enter fornheight value : "))
+#             print("fahrenheit_to_kelvin {} = {}".format(a,fk(a)))
+            
+#         case 5:
+#             print("===Enter Two value for Floar-Division=== ")
+#             a=int(input("Enter kelvin value : "))
+#             print("kelvin_to_celsius {} = {}".format(a,kc(a)))
+            
+#         case 6:
+#             print("===Enter Two value for Modulo-Division=== ")
+#             a,b=int(input("Enter kelvin value : "))
+#             print("kelvin_to_forenheit {} = {}".format(a,kf(a)))
+            
+#         case 7:
+#             print("===Thank you for using this program=== ")
+#             break
+            
+#         case _:
+#             print("You are selcting wrong operator")

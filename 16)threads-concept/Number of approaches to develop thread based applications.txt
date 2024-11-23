@@ -1,0 +1,341 @@
+========================================================
+Number of approaches to develop thread based applications
+========================================================
+=>Python Programming, we have 3 types of approaches to develop thread based applications. They
+are
+        1. By using Functional Programming Approach
+        2. By using Sub Class of Thread Class ( with Inheritance)
+        3. By using Non-sub class  of Thread class (without Inheritance)
+-----------------------------------------------------------------------------------------        
+1. By using Functional Programming Approach
+===========================================
+Step-1: import threading module
+Step-2: define a function which contains logic executed by Child Thread
+Step-3: create an object of therad class and it is called child thread.
+Step-4: Dispatch the child thread to excuted the targeted Function.
+Example:
+    import threading
+    def generate(n):
+        ------------------
+        ------------------
+    #main program
+    t1=threading.Thread(target=generate,args=(10,) )
+    t1.start()
+    
+Example :     
+--------------------------------------------------
+# what are the purpose of join() function ?
+# => purpose of join() is that join mainThread after completion of execution.
+
+#program displaying 1 to 10 number after each and evevry second by using threads
+#approachexl .py
+import threading,time
+def generate(n):
+    print("Number of Numbers:{}".format(n))
+    ctname=threading.current_thread().name
+    print("Name of Child Thread=",ctname)
+    print("*"*50)
+    for i in range(1,n+1):
+        print("\tValue of i={}".format(i))
+        time.sleep(1)
+    print("*"*50)    
+#main porogram
+mtname=threading.current_thread().name
+print("Name of main thread={}".format(mtname))
+t1=threading.Thread(target=generate, args=(10,) )#creating child thread
+t1.name="Rossom"
+t1.start() # distaching the child thread
+print("Number of active threads=",threading.active_count())
+t1.join()
+print("Line24 Number of active threads=",threading.active_count()) # Here only mainThread available at the end child thread destroy by GC
+
+'''
+output
+=====
+Name of main thread=MainThread
+Number of active threads= 2
+Number of Numbers:10
+Name of Child Thread= Rossom
+**************************************************
+	Value of i=1
+	Value of i=2
+	Value of i=3
+	Value of i=4
+	Value of i=5
+	Value of i=6
+	Value of i=7
+	Value of i=8
+	Value of i=9
+	Value of i=10
+**************************************************
+Line24 Number of active threads= 1
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+
+
+'''
+
+
+# write a thead based application which will generate a multiplication table by using threads(use funtional approach).
+import threading,time
+def mulTable(n):
+    tname=threading.current_thread().name
+    print(f"Name of child thread = {tname}")
+    if n<=0:
+        print(f"Invalid Input : {n}")
+    else:    
+        print("*"*50)
+        for i in range(1,11):
+            print(f"\t{n}x{i} = {n*i}")
+            time.sleep(1)
+        print("*"*50)
+        
+        
+# main program 
+print(f"Number of active threads in this program before start: {threading.active_count()}")
+n=int(input("Enter number :"))
+t1=threading.Thread(target=mulTable,args=(n,))
+print("Defult child thread",t1.name) # getting child thread name
+t1.name="Hyd" # setting user-friendly thread name
+print("Execution status of tl before start=",t1.is_alive()) # False(thread is not running )
+t1.start()
+print("Execution status of tl After start=",t1.is_alive()) # True(thread is running )
+print(f"Number of active threads in this program after start : {threading.active_count()}")
+t1.join()
+print("Execution status of t1 after execution=",t1.is_alive()) # True(thread is running )
+print(f"Number of active threads in this programafter after execution completion : {threading.active_count()}")
+
+'''
+output
+=====
+Number of active threads in this program before start: 1
+Enter number :
+12
+Defult child thread Thread-1
+Execution status of tl before start= False
+Name of child thread = Hyd
+**************************************************
+	12x1 = 12
+Execution status of tl After start= True
+Number of active threads in this program after start : 2
+	12x2 = 24
+	12x3 = 36
+	12x4 = 48
+	12x5 = 60
+	12x6 = 72
+	12x7 = 84
+	12x8 = 96
+	12x9 = 108
+	12x10 = 120
+**************************************************
+Execution status of t1 after execution= False
+Number of active threads in this programafter after execution completion : 1
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+'''
+
+
+===================================================================================================================
+2. By using Sub Class of Thread Class( with Inheritance)
+=============================================================================================================        
+
+=>To develop thread based applicatßon by using Sub Class of Thread (Inheritance), we use the
+following steps
+Step-1:import threading module
+-------
+Step-2:Choose the Programmer-defined class name
+-------
+Step-3:The programmer-defined class must inherit from Thread class of threading module
+-------
+Step-4: The programmer-defined class must override null body run(self) of Thread class which is executed by child thread
+-------
+Step-5:Create an object of sub class of Thread Class (called child thread)
+-------
+Step-6: Dispatch the thread by using start() here start() internally calls run(self) ]
+-------
+
+
+example:
+======
+
+
+#Program will display to n numbers by using threads with OOPs (Inheritance)
+#NumGenEx1.py
+import time
+from threading import Thread
+
+class Numbers(Thread):
+    def run(self): # Overridden run()
+        self.n=int(input("Enter Number of Numbers to generate: "))
+        print(self.__dict__)
+        if(self.n<=0):   
+            print("O is invalid input:".format(self.n))
+        else:
+            print(f"Number within:{self.n}")
+            for i in range(1,self.n+1):
+                print("\tVal of i={}".format(i))
+                time.sleep(1)
+#main program
+n=Numbers() # creating child thread
+n.start()
+
+
+'''
+output
+=======
+Enter Number of Numbers to generate: 
+3
+{'_target': None, '_name': 'Thread-1', '_args': (), '_kwargs': {}, '_daemonic': False, '_ident': 139872565291808, '_native_id': 3675, '_tstate_lock': <locked _thread.lock object at 0x7f369e9329c0>, '_started': <threading.Event object at 0x7f369e9b15b0>, '_is_stopped': False, '_initialized': True, '_stderr': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, '_invoke_excepthook': <function _make_invoke_excepthook.<locals>.invoke_excepthook at 0x7f369e917d30>, 'n': 3}
+Number within:3
+	Val of i=1
+	Val of i=2
+	Val of i=3
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+'''
+
+
+example-2
+========================
+#OppsApproachn02.py
+import threading,time # step-I
+# step-2     step-3
+class Hyd(threading.Thread):
+    def run(self): #step-4
+        print("i am from run()")
+        print("Therad based Application")
+#main program
+print("Name of main thread=",threading.current_thread().name)
+h=Hyd() # here 'h' is an object of Hyd and considered as Child thread
+print(f"execution status of h before start= {h.is_alive()}")
+h.start()
+print(f"execution status of h before start= {h.is_alive()}")
+time.sleep(4)
+
+'''
+output
+=========
+Enter Number of Numbers to generate: 
+3
+{'_target': None, '_name': 'Thread-1', '_args': (), '_kwargs': {}, '_daemonic': False, '_ident': 139872565291808, '_native_id': 3675, '_tstate_lock': <locked _thread.lock object at 0x7f369e9329c0>, '_started': <threading.Event object at 0x7f369e9b15b0>, '_is_stopped': False, '_initialized': True, '_stderr': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, '_invoke_excepthook': <function _make_invoke_excepthook.<locals>.invoke_excepthook at 0x7f369e917d30>, 'n': 3}
+Number within:3
+	Val of i=1
+	Val of i=2
+	Val of i=3
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+'''
+
+=========================================================================================================================
+3. By using Non-sub class  of Thread class (without Inheritance)
+-----------------------------------------------------------------------------------
+
+=>To develop thread based application by using Non-Sub Class of Thread (without Inheritance), we use the following steps
+
+Step-I: import threading module
+Step-2: Choose Programmer-defined class
+Step.3: Define Programmer-defined method with logic which executed by              child thread inside of Programmer-defined class
+Step.4 : Create an object Programmer-defined class for calling the Instance              method Of Programmer-defined class
+Step-5: Crerate an object of Thread ( child thread) of threading module
+Step-6: Dispatch the child thread by using start()
+
+
+------------------
+Examples
+==========
+#Exm-2Approach3.py
+import threading,time
+class MulTable:
+    def gentable(self,n):
+        tname=threading.current_thread().name
+        print(f"Name of child thread = {tname}")
+        if n<=0:
+            print(f"Invalid Input : {n}")
+        else:    
+            print("*"*50)
+            for i in range(1,11):
+                print(f"\t{n}x{i} = {n*i}")
+                time.sleep(1)
+            print("*"*50)
+            
+#main program
+print("Name of main thread=",threading.current_thread().name) # main thread
+s=MulTable()
+t1=threading.Thread(target=s.gentable,args=(5,))
+t1.name="KVR"
+t1.start()
+
+'''
+Name of main thread= MainThread
+Name of child thread = KVR
+**************************************************
+	5x1 = 5
+	5x2 = 10
+	5x3 = 15
+	5x4 = 20
+	5x5 = 25
+	5x6 = 30
+	5x7 = 35
+	5x8 = 40
+	5x9 = 45
+	5x10 = 50
+**************************************************
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+'''
+
+
+
+
+
+
+---------------------------
+
+#Exm-1Approach3.py
+import threading
+class Sample:
+    def show(self):
+        print("Name of child thread=",threading.current_thread().name) # Thread-I
+        print("show() of Sample")
+        print("We write thread based logic")
+        
+#main program
+print("Name of main thread=",threading.current_thread().name) # main thread
+s=Sample()
+t1=threading.Thread(target=s.show)
+t1.name="KVR"
+t1.start()
+
+'''
+Name of main thread= MainThread
+Name of child thread = KVR
+**************************************************
+	5x1 = 5
+	5x2 = 10
+	5x3 = 15
+	5x4 = 20
+	5x5 = 25
+	5x6 = 30
+	5x7 = 35
+	5x8 = 40
+	5x9 = 45
+	5x10 = 50
+**************************************************
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+
+'''

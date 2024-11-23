@@ -1,0 +1,26 @@
+Inner sets OR nested sets
+==============================
+I) set in set—Not Possible--Un-Hashable Type (index acces and updation is not allow)(indecess and modification is not allow)
+2) set in list—-- Possible
+3) set in tuple----Possibld
+1
+
+list
+1) list in list--Possible
+2) list in tuple—--Possible
+3) list in set----Not Possible--Because set is Un-Hashable type so we can locate list in set so we can't perform any operation on so there is no any logic of use in it.
+
+tuple
+1) tuple in tuple--PossibIe
+2) tuple in list----PossibIe
+3) tuple in set—Possible---bcoz one can write immutable object in another immutable or mutable(here in tuple we can perform any modificaiton so tuple in set not make any effect on tuple property) object because becs we can performmodificatin on it.
+
+
+Summary
+=======
+=> Sets cannot contain other sets or lists because these are unhashable.
+=> Lists can contain sets, lists, and tuples.
+=> Tuples can contain sets, lists, and tuples.
+=> Sets can contain tuples because tuples are immutable.
+
+

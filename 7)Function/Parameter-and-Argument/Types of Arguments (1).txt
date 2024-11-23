@@ -1,0 +1,10 @@
+			=================================================
+						Types of Arguments
+			=================================================
+=>Based on the values of arguments from Function Call passing Formal Parameters of Function Definition, Arguments are classified into 5 Types.
+					1. Possitional Arguments
+					2. Default  Arguments
+					3. Keyword Arguments
+					4. Variable Length Arguments
+					5. Keyword Variable Length Arguments
+=================================================================================================

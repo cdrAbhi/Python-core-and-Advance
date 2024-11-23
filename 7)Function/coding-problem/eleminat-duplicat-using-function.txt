@@ -1,0 +1,65 @@
+# ====================================================================================================================
+# write a python program which will eleminent duplicat value form list of values by using fuction. 
+# ====================================================================================================================
+
+def readvalue():
+    lst=[]
+    print("Enter value and enter # for stop")
+    while(True):
+        v=input()
+        if v=="#":
+            break
+        else:
+            lst.append(int(v))
+    return lst
+    
+def removeduplicat(): #using set and membership operator
+    lst=readvalue()
+    if(len(lst)==0):
+        print("Empty list operation not possible: {}".format(lst))
+    else:
+        s=set()
+        for ele in lst:
+            if ele not in s:
+                s.add(ele)
+          
+        else:
+             print("Orignal List :{}\nUnique value List : {}".format(lst,list(s)))
+    
+    
+# def removeduplicat(): # by using list and membership operator
+#     lst=readvalue()
+#     if(len(lst)==0):
+#         print("Empty list operation not possible: {}".format(lst))
+#     else:
+#         uvl=[]
+#         for ele in lst:
+#             if ele not in uvl:
+#                 uvl.append(ele)
+#         else:
+#              print("Orignal List :{}\nUnique value List : {}".format(lst,uvl))
+
+# def removeduplicat(): #using dictionary and membership operator
+#     lst=readvalue()
+#     if(len(lst)==0):
+#         print("Empty list operation not possible: {}".format(lst))
+#     else:
+#         d={}
+#         for ele in lst:
+#             if ele not in d:
+#                 d[ele]=1 
+#             else:
+#               d[ele]+=1  
+#         else:
+#              print("Orignal List :{}\nUnique value List : {}".format(lst,list(d.keys())))
+ 
+while(True): 
+    opt=input("For start Enter s : \nEnter E for exit :")  
+    if(not opt.isalpha() or (opt.upper()!='E' and opt.upper()!='S')):
+        print("Invailid input")
+    elif opt.upper()=="E":
+        break
+    else:
+        removeduplicat()
+ 
+            

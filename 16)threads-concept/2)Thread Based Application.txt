@@ -1,0 +1,15 @@
+                            Thread Based Application
+                            =========================
+Defnition Of thread:
+--------------------    
+=> A flow of control is called thread.
+=> The purpose of thread is that "To execute any type of operation concurrently"
+                            (or)
+=> The purpose of thread is that "To perform the operation whose code is written in the form of Functions / Methods"
+=>When we write any python programing, there exists two types of threads. They are
+        a) sub thread (or) child thread (or) Fore Ground Thread
+        b) main thread
+=>The purpose of sub thread (or) Fore Ground Thread is that to execute the operations concurrently whose logic is written in the form Of method I functions.
+=>The purpose of main thread is that to monitor the execution status of Sub Thread(s).
+=>Bydefault, we have single main thread only.
+=>Programatically There is a 'Posibility Of creating multiple sub threads and recommended to have single main thread.

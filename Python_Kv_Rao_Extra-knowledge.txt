@@ -1,0 +1,86 @@
+1:
+----
+mail:my9954551@gmail.com   
+pass: mail1@123
+1:
+----
+
+
+
+The definitions you provided need some refinement to be more accurate and clear. Here are the improved definitions:
+
+### Programming:
+**Programming** is the process of designing and writing a set of Optimized instructions for a computer to execute, often to solve a specific problem or perform 
+ a particular task.
+
+### Operating System (OS):
+An **Operating System (OS)** is software that manages computer hardware resources and provides common services for computer programs, enabling them to execute tasks effectively.
+
+Programing: A set of optimized instructions is known as Programing.
+==========
+
+OS: Software that allocates and diallocates Hardware resources to execute task
+
+
+                      Data 
+                     ======   
+Collection of information is called data. (X)
+   -- Because only structured information is process.
+
+Collection of Processed Information is called data. (✔)
+                    OR 
+Collection of structured formate of information is called data. (✔)
+
+data purpuse : Data is use for taking effective decision. 
+-----------------
+
+storing of data
+---------------
+- Data can be store in two memory I)Primary memory(known_By=>Temporary memory)(Component name =>RAM: store temporary data) 
+                                 II)secondary memory(Known_By => Permanent memory)(component_name=>HardDisk : store permanent data)
+
+Range:
+-----------
+ => Range is seques of Numberical integer value either in forward or backwad direction by maintaining eqall intervall step. 
+
+Insertion Order
+---------------------
+ => Whichever data you will organize data will in the  same orde .
+      Exm : list ,bytes,bytearray
+      ===
+
+Constance : Constance are those who never change during program execution.
+========
+exm: Tuple are use to maintain the constance value. 
+     t= (Name,DOB,Class,Marks,Father_name)
+      
+
+
+Non-itterabl object : Non Itterable Object  conatain single value>
+ -------------------------- exampl: int,float,bool,complex
+
+-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+key-generation
+==========
+ssh-keygen -t rsa
+./id_rsa
+
+============
+
+Unhasable type: NO index neither modificatio is possible. example : set data type in pyhton.
+===========
+
+
+Deprication:(Listen in reload)
+=========
+Deprication means calling old version to new version.
+Examp: python1.x  Deprication is python 3.x
+
+
+Reloading
+=======
+=> importlib(module)==>reload(predefine-fun in importlib)
+=> we are using run our funtion again so that new updata display.
+=> After updating file1.py you must use CTR+S in data availale module ,we know that pvm do auto saving but It save our data in shares demo only but here we               externally open file and doing update this will not auto save 

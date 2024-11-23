@@ -1,0 +1,18 @@
+			======================================================
+				Differences Between Functions, Modules and Packages
+			======================================================
+-------------------------
+Functions:
+-------------------------
+=>Functions are used for Performing Operations and Provides Code Re-Usability within in the Same Program but not Possible Access across the Programs
+---------------
+ Modules 
+ --------------
+ =>A Module is a Collection of Global Variables, Function Names and Classes
+ =>Modules are used for Providing Code Re-Usability within in the Same Program and Acorss the Programs(Global Var, Functions and Classes) provided Module and main program present in Same Folder  but not Possible to access across the Folders / Environments / Networks.
+ -------------------------------------------------------------------------------------
+ Packages( APIs-----Application Programming Interface)
+ -------------------------------------------------------------------------------------
+ =>A Packages is a Collection of Modules.
+ =>Packages are used for Providing Code Re-Usability within in the Same Program , Acorss the Programs(Global Var, Functions and Classes) and  across the Folders / Environments / Networks.
+ ---------------------------------------------------------------------------------------------------------------------------------------------

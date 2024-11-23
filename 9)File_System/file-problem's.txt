@@ -1,0 +1,89 @@
+#write a python program which will accept students detail and write to the file.
+# with open ("f1.data","at") as fa:
+#     name=input("Enter your name : ")
+#     number=input("Enter your number : ")
+#     Marks=input("Enter your Marks : ")
+#     fa.write(name)
+#     fa.write("\t"+number)
+#     fa.write("\t"+Marks+"\n")
+    
+    
+#write a python program which will accept any type of data and write to the file and save to file until we press @ symbol
+======================================================================================
+# with open ("f1.data","at") as fa:
+#     while True:   
+#         data=str(input("Enter data"))
+#         fa.write("\t"+data+"\n")
+#         print("Do you want enter data : yes/No")
+#         if input().upper()=="NO":
+#             print("Thank you for using this program")
+#             break
+
+# write a python program which will display content of any file name (use read and readlines)        
+# write a python program which will copy the content of one file into another file
+src=input("Enter")
+with open("file_name",r):
+    des=input("Enter file name")
+    with open("des",a) as cf:
+        data=src.read()
+       cf.write(data)
+
+
+# write a python program which will copy an image from one file to another file
+# write a python program which will find number of lines ,numbers of words and number of characters in a file.
+src=input("Enter source file : ")
+try:
+    with open("src",r):
+        lst=src.readlines()
+        ln=0
+        lnw=0
+        lnc=0
+        if len(lst)==0:
+            print("file is Empty")
+        else:    
+            for line in lst:
+                ln+=1 
+                lnw+=len(line.split())
+                lnc+=len(line)
+            else:        
+                print("Number of line in {} is : ".format(len(lst)))
+                print("Number of words in {} is : ".format(len(lstw)))
+                print("Number of characters in {} is : ".format(len(lstc)))
+except FileNotFoundError:
+    print("File not available")
+
+# write a python program which will get the vowel words only from the given file
+src=input("Enter source file : ")
+try:
+    with open("src",r):
+        lst=src.readlines()
+        lstv=[]
+        if len(lst)==0:
+            print("file is Empty")
+        else:    
+            for line in lst:
+                for w in line:
+                    if ("a" in w.lower()) or ("e" in w.lower()) or ("i" in w.lower()) or ("o" in w.lower()) or ("u" in w.lower()):
+                        lstv.append(w)
+            else:        
+                print("list of vowel word of {} is : {}".format(lst,lstv))
+except FileNotFoundError:
+    print("File not available")
+    
+# write a python program which will read the content from any file and print the content of the file in reverse order .
+
+src=input("Enter source file : ")
+try:
+    with open("src",r):
+        lst=src.readlines()
+        lstv=[]
+        if len(lst)==0:
+            print("file is Empty")
+        else:    
+            for line in lst:
+                lstv.append(w[::-1])
+            else:        
+                print("list of vowel word of {} is : {}".format(lst,lstv))
+except FileNotFoundError:
+    print("File not available")
+    

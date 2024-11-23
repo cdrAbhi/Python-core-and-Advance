@@ -1,0 +1,88 @@
+		========================================================================
+					1. Arithmetic Operators
+		========================================================================
+=> Arithmetic Operators are those Which are used to perform Arithmetic Operations such as Addition, Sustraction,Multiplication..etc.
+=> If an  Arithmetic Operator connected with Two or More Objects OR Values then It is called  Arithmetic Expression.
+=> In Python Programming, we have 7 Types of  Arithmetic Operators. They are Given in the following Table
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SLNO		         SYMBOL				MEANING			EXAMPLES  a=10   b=3
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.			+			                Addition				print(a+b)---------13
+
+2.			-				Substraction			print(a-b)----------7
+
+3.			*				Multiplication			print(a*b)----------30
+
+4.			/				Division				print(a/b)-------3.3333333333333335
+							(Float Quotient)	
+
+5.			//				Floor Divsion			print(a//b)------3
+							(Integer Quotient)	
+
+6.			%				Modulo Division			print(a%b)-----1
+							(Remainder )
+
+7.			**				Exponentiation			print(a**b)
+							(Power )
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> print(10/3)
+3.3333333333333335
+>>> print(10//3)
+3
+----------------------------------------------------------
+>>> 10.0/3.0
+3.3333333333333335
+>>> 10.0//3.0
+3.0
+-----------------------------------------------------------
+>>> 10.0/3
+3.3333333333333335
+>>> 10.0//3
+3.0
+----------------------------------------------------------
+>>> 10/3.0
+3.3333333333333335
+>>> 10//3.0
+3.0
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Special Points
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> print(2*3)
+6
+>>> print("2"*3)
+222
+>>> print("2+5"*3)
+2+52+52+5
+>>> print("3"2*3)-------------------SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("3",2*3)
+3 6
+>>> print("3"+2*3)---------------------TypeError: can only concatenate str (not "int") to str
+>>> print("3"+str(2*3))
+36
+>>> print("3"*str(2*3))-------------------TypeError: can't multiply sequence by non-int of type 'str'
+>>> print("3"*3*2)
+333333
+>>> print(str(2+3)*3*2)
+555555
+>>>
+
+QUE::: write a python program which demonstrate the functinallaty of Arithematic Operator?
+===
+
+QUE:: write a python program which will calculate squart root of any program without using sqrt    ===    function Math module? Hint(√5=25**(1/2) OR √5=25**(0.5) ) 
+           exam:                              
+           =======
+          >>> import math
+          >>> math.sqrt(25)
+           5.0
+          >>>
+
+QUE:: write a python program which will calculate (a+b) hole square?
+===
+
+QUE:: write a python program which will accept number of days and convert into number of ===   ===    year and months?
+input=370
+output: 1 year 0 month 5 days
+

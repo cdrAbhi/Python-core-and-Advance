@@ -1,0 +1,24 @@
+                    Programmer-Defined Character Classes
+                    =====================================
+=>These Classes are developed by Python Programmers and They are used in Designing of Search Patterns which is used to
+Search OR Match or Find in Given Data and obtains Desired Result.
+=>Syntax:  "[ Search Pattern ]"
+=>ln Python Programming. we have the following Programmer-Defined Character Classes.
+===========================================================================================================================
+1. [abc]-----> searches for either 'a' or 'b' or 'c' only
+2. [^abc]-----> searches for all except 'a' or 'b' or 'c'
+3. [A-Z]-------> searches for Upper Case Alphabets Only
+4. [^A-Z]-------> searches for all except Upper Case Alphabets
+5. [a-z]-------->searches for Lower Case Alphabets Only
+6. [^a-z]-------->searches for all except Lower Case Alphabets
+7. [A-Za-z]------>searches for All Alphabets (Lower + Upper ) Only
+8. [^A-Za-z]------>searches for All except Alphabets (Lower + Upper )
+9. [0,9]------>for all Digits Only
+10. [^0,9]------>> searches for all except Digits
+11. [A-Za-z0-9]------>searches for Alpha-Numeric Values ( except Special symbols)
+12. [^A-Za-z0-9]------->searches for all special symbols ( except Alpha-Numeric Values )
+13. [A-Z0-9]------> searches for upper Case alphabets with Digits Only
+14. [^A-ZO-9]->Searches for all except Ppper Case alphabets with Digits
+15. [a-zO-9]---->Searches for Lower Case alphabets with Digits Only
+16. [^a-zO-9]---->Searches for all except Lower Case alphabets with Digits
+===========================================================================================================================

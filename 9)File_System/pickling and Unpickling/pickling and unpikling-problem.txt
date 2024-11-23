@@ -1,0 +1,7 @@
+#write a python program which will accept Emloyee detail Emloyee name ,sal and digistanation and save them in a file by using pickling process.
+#write a python program which will read all the Emloyee record from the file by using unpickling process.
+#write a python program which will accept any  Emloyee number and obtain other detail of Emloyee.
+#write a python program which will accept Student details such as student number ,name ,Marks and collage name fo n number of student and save them in a file.
+#write a python program which will read all the Student records by using unpickling.
+
+

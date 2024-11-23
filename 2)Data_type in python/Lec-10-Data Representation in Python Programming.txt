@@ -1,0 +1,78 @@
+			============================================================
+					Data Representation in Python Programming
+			============================================================
+-----------------------------
+What is Data
+-----------------------------
+=>Structured format of Information is called Data
+			(OR)
+=>Processed Information is called Data
+=>The purpose of Data is that "To Take Effectve Decisions".
+-------------------------------------------------------------------------------------------
+Data Storage
+-------------------------------------------------------------------------------------------
+=>In Industry, Data can be stored in 2 Places. They are
+			1. Main Memory (RAM---Temporary Memory )
+			2. Secondary Memory ( Hard Disk---Permanent Memory)
+					a) Files
+					b) RDBMS Softwares(Oracle, MySQL, DB2,,......etc)
+=======================================================================================
+			Rules for using Variables in Python Program
+===========================================================================================
+=>To use Variables in Python Program, we following the following Rules
+-----------------
+RULE-1: The variable Name is a Combination of Alphabets,Digits and Special Symbol Under Score ( _ ).
+-----------------
+RULE-2 : The First Letter of the Variable Name Must starts either with an Alphabets or with Under  Score ( _ ) Only.
+------------------
+		Examples:
+		-----------------
+			>>>2sal=45----Invalid
+			>>>$sal=56----Invalid
+			>>>sal=45-----valid
+			>>>_sal=45----valid
+			>>>sal_=56--valid
+			>>>__sal=56--valid
+			>>>sal__=67---valid
+			>>>__sal__=34--valid
+			>>>sal123=56----valid
+------------------
+RULE-3   Within the Variable No Special Symbols are allowed except Under Score ( _ )
+-----------------
+			Examples:
+			----------------
+				>>>emp sal=45-----Inavlid
+				>>>emp-sal=56---Invalid
+				>>>emp$sal=67--Invalid
+				>>>emp_sal=67--Valid
+				>>emp_12_sal=45--valid
+------------------------
+RULE-4:    No Keywords to be used Variable Names bcoz keywords are the Reserwed Words which is having Special 
+------------------------Meaning to the Language Compilers
+
+		Examples
+		-----------------
+					>>>False=34--Invalid
+					>>>False1=56----Valid
+					>>>while=56-----Invalid
+					>>>_while=56---valid
+					>>>for =56---Invalid
+					>>>__for=56--valid
+-
+Below code is use to get total 35 Keyword
+-------------------------------------------------
+import keyword as k
+klist= k.kwlist
+print(klist)
+-----------------------------
+-----------------------------------
+RULE-5:  Python Variable Name are Case-Sensitive ( Upper Case Letters are Different from Lower Case Letters)
+------------------------------------
+		Examples
+		-------------------
+		>>> AGE=99
+		>>> Age=98
+		>>> aGe=97
+		>>> agE=96
+		>>> print(AGE,Age,aGe,agE)------------99 98 97 96
+==============================================x=====================================

@@ -1,0 +1,22 @@
+		=============================================================
+				Mutable and Immutable Objects--Most Imp
+		=============================================================
+-------------------------
+Mutable Object
+-------------------------
+=>A Mutable Object is one which allows to Modify the values at Same Address.
+--------------------
+Examples:
+--------------------
+=>bytearray,list,set,dict
+-------------------------
+IMMutable Object
+-------------------------
+=>Immutable Object is one, which sattisfies the following the Properties.
+		
+	1. Immutable Object never allows us to modify at same address (Value Modified and Modified 
+	    Value Placed at New Address)
+	2.  Immutable Object never allows to Perform Item Assignment.
+
+Example: int, float, bool, complex, str,bytes, range,tuple,set,frozenset,NoneType
+==================================x=================================================

@@ -1,0 +1,20 @@
+# 1. write a python program which will validate a 10 digit mobile number.
+#--------------------------------------------------------------------------
+# 2. write a python program which will search for names of the student and their marks.
+#--------------------------------------------------------------------------
+# gd= Abhi got 56 marks , Raman got 77 marks, Rocky got 88 marks, Ganesh got 99 marks,
+# Anju got 66 marks Senapathi got 68 marks and Rossum got II marks and Kkgupta got 58
+# marks and Sagar got 48 marks"
+#--------------------------------------------------------------------------
+
+#3. write a python program which will read the text documentation from the file and retrive name and marks.
+#--------------------------------------------------------------------------
+
+
+#4. write a python program which will validate and retrive emails of differents students where the student information present in the file.
+#----------------------------------------------------------------------------------------
+'''
+Gosling and whose mail id is Goslinq_123@sun.com , Ritche and whose mail id is
+ritch2-12@beIllabds.co.in , Travis and whose mail id is Travis-O@numpv.orq , Kinney and
+whose mail id is Kinne-ndas.net.in and Irfan and whose mail id is Irfan.123@tcs.com
+'''

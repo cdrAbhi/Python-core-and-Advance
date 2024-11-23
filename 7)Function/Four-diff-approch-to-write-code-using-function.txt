@@ -1,0 +1,59 @@
+# write a python program which will calculate some of two number using function.
+# => the above task can be implemented by four approches.
+
+# write a python program which will calculate simple intrest and total amount to by using function.
+
+# Approch-1
+# =============
+
+# def CalSimT(p,r,t):
+#     si=(p*r*t)/100
+#     Tl=p+si
+#     return si,Tl
+
+# sipInt,T=CalSimT(500,4,12)  
+# print("Simple Interest amount is : {}".format(sipInt))
+
+# Approch-2
+# =============
+
+# def CalSimT(p,r,t):
+#     si=(p*r*t)/100
+#     Tl=p+si
+#     print("Simple Interest amount is : {}".format(si))
+#     print("Total amount is : {}".format(Tl))
+    
+# p,r,t=int(input("Enter Principle : ")),int(input("Enter rate : ")),int(input("Enter Time : "))
+# CalSimT(p,r,t)  
+
+
+# Approch-3
+# =============
+
+# def CalSimT():
+#     p,r,t=int(input("Enter Principle : ")),int(input("Enter rate : ")),int(input("Enter Time : "))
+#     si=(p*r*t)/100
+#     Tl=p+si
+#     return si,Tl
+    
+# sipInt,T=CalSimT() 
+# print("Simple Interest amount is : {}".format(sipInt))
+# print("Total amount is : {}".format(T))
+
+
+# # Approch-4
+# # =============
+
+# def CalSimT():
+#     p,r,t=int(input("Enter Principle : ")),int(input("Enter rate : ")),int(input("Enter Time : "))
+#     si=(p*r*t)/100
+#     Tl=p+si
+    
+#     return p,r,t,si,Tl
+    
+# t=CalSimT()  
+# p=t[0]
+# r=t[1]
+# p=t[2]
+# print("Simple Interest amount is : {}".format(t[3]))
+# print("Total amount is : {}".format(t[4]))

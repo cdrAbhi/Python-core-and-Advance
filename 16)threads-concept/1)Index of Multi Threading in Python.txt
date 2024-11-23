@@ -1,0 +1,19 @@
+                    Multi Threading in Python
+                    ==========================
+Index:
+======
+=>Purpose of Multi Threading
+=>Definition of Thread
+=>Types of Applications
+    1) Process Based Applications
+    2) Thread Based Applications
+=>Module Name required for Multi Threading
+        1) threading—Thread
+=>Number of approaches for developing Thread Based Application
+=>Programming Examples
+----------------------------------------------
+=>Dead Locks Concept
+=>Dead Locks Elimination Concept
+=>Module Name required for Dead Locks
+                1) threading—Lock
+=>Programming Examples

@@ -1,0 +1,123 @@
+          bool data type
+         ================
+ => 'bool' is one of the pre-defined class and treated as Fundamental Data Type.
+ => The purpose of bool data type is that "To Store True , False Values (Logical Values) "
+ => Python Programming, True and False are the Keywords and treated as Values of bool data type.
+ => Internally, In Python Programming, True is Considered as 1 and False is Considered as O (Most Imp)
+ => On the values of Bool Values(0,1), we can Perform Boolean Arithmetic Operations.
+Examples
+---------
+a= True
+print(a,type(a)) ------------------- True <class 'bool'>
+
+b=False
+print(b,type(b))------------------- False <class 'bool'>
+
+print(c)        ------------------- NameError: name 'c' is not define
+
+d=true          --------------------name 'true' is not defined. Did you mean:'True'?
+
+e=false         --------------------name 'false' is not defined. Did you mean:'False'?
+
+-----------
+boolean Arithematic Operation
+-----------
+a=True
+b=False
+c=a+b
+print(c,type(c))----------------1 <class 'int'>
+print(4*True+2+True)-------------7
+print(False/False) ---------------ZeroDivisionError:division by zero
+print(True/Flase) ---------------ZeroDivisionError:division by zero
+print(True-OxF*2)----------------- -29
+print(True+OxF-2)------------------14
+
+_-------------
+
+
+
+
+
+
+
+                        complex data type
+                       ====================
+=> 'complex' is one of the pre-defined class and treated as Fundamental Data Type.
+=> The purpose of complec data type is that "To store Complex Values".
+=> The general notation of complex value is given bellow.
+     a+bj OR a -bj
+  Here 'a' is called Real Part
+  Here 'b' is called Imaginary Part
+  Here symbol is 'j' represent sqrt(-l)
+
+=> Internally, The Real and Imaginary Parts are trated as    Float Data Type
+
+v=( a +   bj )        --->   In this example x is object and (a+bi) is complex literal and real(a) and imag(b) treated as data member and Attributes.
+    |     |           
+   int   int
+   "or"  "or"
+  float  float
+
+
+=>To get Real and Imaginary Values of Complex Object, we have Two PRE-DEFINED Attributes OR
+  Data Members. They are
+   a) real
+   b) imag
+    Syntax: complexobj.real ------> Gives Real Part of Complex Object
+            complexobj.imag ------> Gives Imaginary of Complex Object
+
+=> On the obejcts of complex , we can perform all types of Arithmetic Operations.
+
+-------------------------------
+
+Example
+--------
+a=2+3j
+print(type(a))------------<class 'complex'>
+
+b=2-3j
+print(type(b))------------<class 'complex'>
+
+c=2+3i
+print(c) ---------------------Syntaxrror:invailid decimal literal
+
+a=2.3+3.6j
+print(a,type(a))--------------(2.3+3.6j) <class 'complex'>
+
+a=2+3.6j
+print(a,type(a))--------------(2+3.6j) <class 'complex'>
+
+a=2.3+3j
+print(a,type(a))--------------(2+3.3j) <class 'complex'>
+
+a=-3j
+print(a,type(a))-------------  (-0-3j) <class 'complex'>
+
+a=3j
+print(a,type(a))-------------  3j <class 'complex'>
+
+
+a=2+3j
+print(a,type(a))-------------- (a=2+3j)<class 'complex'>
+print(a.real) --------------2.0
+print(a.imag) --------------3.0
+
+a=2.3+4.6j 
+print(a,type(a)) -------------- (2.3+4.6j) <class 'complex'>
+print(a.real) -------------- 2.3
+print(a.imag)  --------------4.6
+
+
+a=-4j
+print(a,type(a)) -------------- (-0-4j) <class 'complex'>
+print(a.real)------------------ -0 
+>>> print(a.imag)-------------- -4
+
+----------------------------------
+a=2.5+4j
+print(a,type(a))-------------->> a=2.5+4j <class 'complex'>
+print(a.real)----------------->> 2.5
+print(a.imag)----------------->> 4.0
+print(a.imaginary)------------>> AttributeError:complex' object has no attribute 'imaginary'
+
+----------------------------------

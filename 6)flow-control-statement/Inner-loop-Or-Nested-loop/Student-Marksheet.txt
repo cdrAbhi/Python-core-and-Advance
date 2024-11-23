@@ -1,0 +1,80 @@
+while(True):
+    name=input("Enter your name : ")
+    lst=name.split()
+    res=True
+    for s in lst:
+        if not s.isalpha():
+            print("From input string part {} is an Invailid input".format(s))
+            res=False
+            break
+    if(not res):
+        print("Pleas Enter Valid input")
+    else:
+        break
+  
+while(True):
+    cm=input("Enter your C prog marks : ")
+    if(not cm.isdigit()):
+        print("Non-Integer value not allow Please Enter Valid input")
+    elif int(cm)<0:
+        print("Negative-Integer value not allow")
+    else:
+        break  
+
+while(True):
+    cpp=input("Enter your C prog marks : ")
+    if(not cpp.isdigit()):
+        print("Non-Integer value not allow Please Enter Valid input")
+    elif int(cpp)<0:
+        print("Negative-Integer value not allow")
+    else:
+        break  
+    
+while(True):
+    pth=input("Enter your C prog marks : ")
+    if(not pth.isdigit()):
+        print("Non-Integer value not allow Please Enter Valid input")
+    elif int(pth)<0:
+        print("Negative-Integer value not allow")
+    else:
+        break   
+
+cm=int(cm)
+cpp=int(cpp)
+pth=int(pth)
+t=cm+cpp+pth  
+p=(t/300)*100
+
+if cm<40 or cpp<40 or pth<40:
+    re="fail"
+elif 180<=t<=300:    
+    re="1st Division"
+elif 150<=t<=179:    
+    re="2nd Division"
+elif 120<=t<=149:    
+    re="3rd Division"
+
+print("*"*50)
+print("\tC programing marks is :  {}".format(cm))
+print("\tCPP programing marks is : {}".format(cpp))
+print("\tPython programing marks is : {}".format(pth))
+print("*"*50)
+print("\tTotal marks is : {}".format(t))
+print("\tPercentage of marks is : {}".format(p))
+print("*"*50)  
+print("\tyour result is : {}".format(re))
+print("*"*50)    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 

@@ -1,0 +1,26 @@
+		===============================================================
+				Types of exceptions
+		===============================================================
+=>In Python Programming, we have Two types of exceptions. They are
+
+			1. Pre-Defined OR Built-In exceptions
+			2. Programmer OR User OR Custome-Defined Exceptions
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Pre-Defined OR Built-In exceptions
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=> Pre-Defined OR Built-In exceptions are those which are developed by Python Language Developers and they are available in Python Software and used by All Python Programmers for dealing Universal Problems
+=>Some of the Universal Problems are
+		a) Attempt to Convert Invalid Type of Values into Some Other Type ( ValueError, TypeError)
+		b) Attempting to zero for Denominator (ZeroDivisionError)
+		c) Attempting to enter Invalid Index value (IndexError)
+		d) Attempting to import Invalid Module Name (ModuleNotFoundError)...etc
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Programmer OR User OR Custome-Defined Exceptions
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+=> Programmer OR User OR Custome-Defined Exceptions are those which are developed by Python Language Programmers and they are available as part of Python Project and used by Othert Team members for dealing with Common Problems.
+=>Some of the Common Problems are
+
+			a) Attempting to enter Invalid PIN in ATMs
+			b) Attempting to Invalid User Name / Passward 
+			c) Attempting withdraw more amount from existing bal of account ...etc
+======================================================================================================

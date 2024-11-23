@@ -1,0 +1,10 @@
+		====================================================================
+				 Python Ternary Operator 
+		====================================================================		 
+=>The Name of the Python Ternary Operator  is " if..else " Operator
+-----------------
+=>Syntax:		varname = Expr1  if  Test Cond   Expr2
+----------------
+=>The Execution Process of Python Ternary Operator is that " First Test Cond is Evaluated. If the Test Cond True then PVM Executes Expr1 and whose Result Assigned to LHS Varname. If the Test Cond False then PVM Executes Expr2 and whose Result Assigned to LHS Varname.
+-------------------------------------------
+

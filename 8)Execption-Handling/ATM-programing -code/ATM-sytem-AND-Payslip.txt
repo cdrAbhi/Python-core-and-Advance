@@ -1,0 +1,27 @@
+# 1.write a python program which will implement the followig some of the operations of ATM and Develop hit and handle the appropriate operation
+# 1. Depositi
+# 2. Withdraw
+# 3. Bal Enq
+# 4. Exit
+
+# 2)write a python program which will implement generating paysleep of an employ by excepting Employ Number(NOt allow 0,alph,alphaNum,Negative) ,EmployName and Basic salary(Not allow 0 ,negativeNumber) calculate the folloing benifits.
+    1)if basicsal is more than 10000 then
+        da=20%basicsal
+        ta=10%basicsal
+        cca=3%basical
+        ma=2%basical
+        hra=12%basicsal
+        Deductions
+        lic=2%basicsal
+        gpf=2%basicsal
+    
+    2)if basicsal is less than or equal to 10000 then
+        da=18%basicsal
+        ta=7%basicsal
+        cca=2%basical
+        ma=2%basical
+        hra=8%basicsal
+        Deductions
+        lic=1%basicsal
+        gpf=1.5%basicsal
+    NetSal=(basicsal+da+ta+cca+ma+hra)-(lic+gpf)

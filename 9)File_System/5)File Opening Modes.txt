@@ -1,0 +1,66 @@
+			==============================================================
+					File Opening Modes
+			==============================================================
+=>File Opening Modes makes us to understand in which mode we are opening a File.
+=>In Python Programming, we have 8 File Opening Modes. They are
+
+			1. r			4) r+	7) x
+			2. w			5) w+	8) x+
+			3. a			6) a+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) r
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "r" mode is that "To Open the File in Read Mode" and later we can perform Read Operations.
+=>If we open the file in "r" mode and if that File does not Exist then we get FileNotFoundError
+=>If we don't specify any File Mode then PVM takes "r" mode as default file opening mode.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) w
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "w" mode is that " To Create a File Newly and Open that File in Write Mode " and later we can perform Write 
+    Operations.
+=>If we open NEW FILE in "w" Mode then that File Created Newly and Data Can be written
+=>If we open EXISTING FILE in "w" Mode then that File Opened in Write Mode and Existing Data REPLACED with new Data.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+3) a
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "a" mode is that " To Create a File Newly and Open that File in Write Mode " and later we can perform Write 
+    Operations.
+=>If we open NEW FILE in "a" Mode then that File Created Newly and Data Can be written
+=>If we open EXISTING FILE in "a" Mode then that File Opened in Write Mode and new data is added after the existing data without modifying the existing content..
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) r+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "r+" mode is that "To Open the File in Read Mode" and we can perform Read Operations and Later we can 
+    also perform Write Operations.
+=>If we open the file in "r+" mode and if that File does not Exist then we get FileNotFoundError
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+5) w+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "w+" mode is that " To Create a File Newly and Open that File in Write Mode " and  we can perform Write 
+    Operations and later we can also perform Read Operations.
+=>If we open NEW FILE in "w+" Mode then that File Created Newly and Data Can be written and we can read also.
+=>If we open EXISTING FILE in "w+" Mode then that File Opened in Write Mode and Existing Data REPLACED with new Data.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+6) a+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "a+" mode is that " To Create a File Newly and Open that File in Write Mode " and  we can perform Write 
+    Operations and later we can also perform Read Operations.
+=>If we open NEW FILE in "a+" Mode then that File Created Newly and Data Can be written and later we can also read.
+=>If we open EXISTING FILE in "a+" Mode then that File Opened in Write Mode and Existing Data APPENDED with new Data and 
+   on that Data we can do Write and Read Operations
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+7) x
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "x" mode is that " To Create a File Newly and Open that File in eXclusively in Write Mode only at Once" and 
+    immediately we can perform Write Operations.
+=>If we open existing File in "x" Mode then we get FileExistError.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+8) x+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>The purpose of "x+" mode is that " To Create a File Newly and Open that File in eXclusively in Write Mode only Once" and 
+    immediately we can perform Write Operations and Later we can also perform Read Operations.
+=>If we open existing File in "x+" Mode then we get FileExistError.
+
+=> The purpose of "x+" mode is to create a new file and open it in write mode with exclusive access, meaning it will raise an error if the file already exists. Once the file is       created and opened, you can perform both write and read operations.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+

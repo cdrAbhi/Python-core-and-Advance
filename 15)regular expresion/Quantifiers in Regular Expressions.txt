@@ -1,0 +1,7 @@
+                        Quantifiers in Regular Expressions
+                        ===================================
+"KVKKVKKKVKV"
+1) k+ —--->searches One or More
+2) k* --->searches for zero or one or More
+3)k?----->searche for zero or one
+4).----->searche  for all chars

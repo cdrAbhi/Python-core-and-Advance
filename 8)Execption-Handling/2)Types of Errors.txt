@@ -1,0 +1,84 @@
+			=================================================================
+					Introduction to Exception Handling
+							(OR)
+					Types of Errors
+			=================================================================
+=>The purpose of Exception Handling is that " To develop Robust(Strong)  Applications".
+=>When we enter Valid Input then we get Valid Result 
+=>When we Enter Invalid Input then we Must Define a Code for generating User-Friendly Error Message by using Exception 
+    Handling.
+=>In Real Time to develop any project, we must use a Programming Language. By using Programming Language, we Develop, Compile and Execute Various Programs. During this Process, we get 3 Types of Errors. They are
+
+				1. Compile Time Errors
+				2. Logical Errors
+				3. Runtime Errors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Compile Time Errors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Compile Time Errors are those which are occuring during Compilation Process ( .py------>.pyc)
+=>Compile Time Errors occurs due to Wrong Syntaxes. 
+=>Compile Time Errors are solved by programmers during Development Level
+----------
+>> a=12
+>> c=a+    syntex Error=========> compile time error
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Logical Errors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Logical Errors are those which are occuring during Execution / Run Time
+=>Logical Errors occurs due to Invalid / Wrong  Logics used in Program and always gives Wrong Result
+=>Logical Errors are solved by programmers during Development Level
+>> a=12
+>> c=a+b/2    =========>wrong formula due to wrong output-----|
+                                                                                                          |========>Logical error
+>>c=(a+b)/2=========> Correct output so get right output---------|
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Runtime Errors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Runtime Errors are those which are occuring during Execution / Run Time.
+=>Runtime Errors occurs due to Invalid input OR Wrong Inputs Entered by END-USER OR Application User
+=>Runtime Errors are solved by programmers during Development Level by studying Forecasting Requirments of END-Users.
+----------
+>>a=2
+>>b=0
+>>c=a/b  ==>invalid input=>Runtime error
+-----------
+>>a=2
+>>b=""
+>>c=a/b  ==>invalid input=>Runtime error
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+==NOTE::==
+Every-Invalid-input give=>Technichal error ==> called Runtime error =>every Runtime error is an Exeception ==>(Exception is nothing but creating an object  )when execption occur three step are create => To do this three step create object ==> ==> evey object hava a class ==>That object of the class is called Exception class =>This is nothing but a Technichal error give by PVM to programer.
+=======EXAMPLE======
+s="Wam"
+print(s[10])
+-output-------------------------------------
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    print(s[10])
+IndexError: string index out of range
+
+
+** Process exited - Return Code: 1 **
+Press Enter to exit terminal
+-----------------------------------------------------------------------------------------=================================================
+
+
+
+Predifine exception Error:
+===================
+=> Wrong Index : IndexError
+=> Wrong Attributes  :AttributesError
+     a=2+3J
+     print(a.image) ==>Atrributes Error
+=> Wrong Module Name  : Module not found error
+=> Gloabal varible name I am changing inside body without using global keyword is :  UnboudLocalError
+=> Removing Element which is not available in set : key-error
+=> Wrong Argument passing OR wrong input passing is : TypeError
+=> Converting Complex to int is : TypeError
+=> Converting strfloat to int : ValueError 
+=> strint/strint = TypeError
+
+All exception treated of object of appropriate exception.
+=========

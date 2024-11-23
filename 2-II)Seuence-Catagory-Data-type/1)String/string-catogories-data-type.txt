@@ -1,0 +1,99 @@
+character data :
+====
+=> character is a single value of Numberic,Alpha-Numbric and special symbol enclosed in single courts .
+
+char
+=====
+=> char is a identifier ,value, literal Enclosed within single courts.
+
+String :
+=====
+=>  String is a collection of character,Numeric,Alpha-Numric and special symbol enclosed in  single courts(' ') or,double corts(" ")  or,triple single courts(''' ''') or triple double courts(""" """).
+
+NOTE:
+======
+In python:(Other Programing language like java and C/C++ having sepret rule for String and character)
+=======
+In Python Programing any Literal or Value available in single or double or triple single or triple double courts treated as String there is no concept of Char available in Python.
+
+
+note:
+====
+=> In java or C/C++ It's compulsury to store char in SIngle courts or String in double courts
+
+ NOTE:
+=====
+In Python string have two type of 
+                          I)data single line string data (Any single string:name,)  : use double courts(" ") or single courts(' ') to store only single line data never allow multi line data
+                          II)multiline string data   (more than a line data : Address): use   triple single courts(''' '''') or  triple double courts(""" """") to store multiline data
+   
+
+double courts or single courts : 
+====================
+use to store  single line string data.
+ Syntax: "string value or single character"
+               "string value or single character"
+              
+
+triple single courts(''' '''') or  triple double courts(""" """"): 
+====================
+use to  to store multiline string data also single line string data.
+ Syntax : """Multiline string value or single line string value or single string character"""
+               '''Multiline string value or single line string value or single string character'''
+              
+
+Purpuse: pyhton internally organize within of in single court
+=========================================
+ => Even those use in single or double or triple single or triple double courts internally data organize within doulbe court for less memory management purpuse.
+
+
+Example:
+========
+print('A',type('A'))-------- -------- A <class ' str>
+
+print("A",type('A'))------- -------- A <class ' str>
+
+print("ABC",type('ABC'))--- ----- ABC <class ' str>
+
+print('ABC',type('ABC'))--- -------ABC <class ' str>
+
+print('Abhi is doing good',type(''Abhi is doing good'))--- -------Abhi is doing good <class ' str>
+
+a="Guido Van Rossom
+[Press Enter]  -------------------SysntexError: Undertermineted string literal(detected at line one )
+
+b='Guido Van Rossom
+[Press Enter]  -------------------SysntexError: Undertermineted string literal(detected at line one )
+
+addr1=" "Guido Van Rossum
+FNO:3-4, Hill Side
+Python So are Foundation
+Nether Lands-56"""
+print(addrl,type(addr1))  --------->  Guido Van Rossum
+                                                         FNO:3-4, Hill Side
+                                                         Python Software Foundation
+                                                         Nether Lands-56 <class 'str'>
+
+addr1  ------------------------->' Guido Van Rossum/n
+                                              FNO:3-4, Hill Side/n
+                                              Python Software Foundation/n
+                                              Nether Lands-56 <class 'str'>
+
+
+
+
+
+
+
+Memory Management of str data
+=========================
+Consider the following str Data
+  >>>s1= "PYTHON" <---When this statement is executed Memory allocated for str data as follows
+
+         -len(s1)-----------------------------------------(-1)
+            ( -Ve indexing(forwad direction)  )
+             _(-6)__(-5)___(-4)___(-3)__(-2)__(-1)_
+s1---->    |   p |    Y    |    T    |   H    |  O   |   N   | 
+               ---(0)----(1)-----(2)----(3)------(4)----(5)-
+            ( +Ve indexing(forwad direction)  )
+             (0)------------------------------------------------------len(s1)-1

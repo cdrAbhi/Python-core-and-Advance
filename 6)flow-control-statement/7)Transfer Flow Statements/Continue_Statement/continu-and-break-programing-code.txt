@@ -1,0 +1,100 @@
+# write a python program which will accept list of value and find their sum and average.
+
+# len=int(input("Enter how many number do you want to enter : "))
+# s=0
+# lst=[]
+# for i in range(1,len+1):
+#     val=input("Enter integer val-{}".format(i))
+#     if not val.isdigit():
+#         print("Enter value is {} Please Enter valid value".format(type(val)))
+#     else:
+#         st=0
+#         lst.append(int(val))
+#         s+=int(val)
+        
+# print("lst={}\nSum of the List val = {}\nAverage of the list val = {}".format(lst,s,s/len(lst)))
+        
+# write a python program which will accept list of numberical value and find list of positive number and negative number
+#MTHD-1 with continue statement
+# n=int(input("Enter how many value Do you want to enter : "))
+# lst=list()
+# plst=[]
+# nlst=[]
+# if(n<=0):
+#     print("Enter valid Input : ")
+# else:    
+#     for i in range(0,n):
+#         val=int(input("Enter val-{} : ".format(i+1)))
+#         lst.append(val)
+#     else:
+#         for val in lst:
+#             if val<0:
+#                 continue
+#             else:
+#                 plst.append(val)
+#         else:
+#             for val in lst:
+#                 if val>=0:
+#                     continue
+#                 else:
+#                     nlst.append(val)
+#         print("positive list= {}\nNegative value list = {}".format(plst,nlst))              
+
+# # MTHD-2 without continue 
+# n=int(input("Enter how many value Do you want to enter : "))
+# plst=[]
+# nlst=[]
+# if(n<=0):
+#     print("Enter valid Input : ")
+# else:    
+#     for i in range(0,n):
+#         val=int(input("Enter val-{} : ".format(i+1)))
+#         lst.append(val)
+#     else:
+#         print(("positive list : {}\n Negative List : {} ").format(plst,nlst))
+
+
+# write a python program it will take input in a list unitl user press # and print it.
+# ====================================================================================
+
+# print("Enter val :Press # if want to ==EXIT==")
+# lst=list()
+# while("abhi"):
+#     val=input()
+#     if(val=="#"):
+#         break
+#     lst.append(val)   
+         
+    
+# print(lst)        
+
+# =============================================================================================
+
+# Given Line of Text: String47Py1th20n6
+# Case-I :
+# -------
+# Expected Output; [StringPythonl
+#                  [4,2,6],[7,1]
+# Case-II:
+# --------    
+# Expected Output; ['PSghinnortty')---Ascending Order
+# ExpectedOutput:[642]--Decending Order+Even NunWer
+# [17)--Ascending Order--Odd Numbers
+
+
+# str="String47Py1th20n6"
+# E,O,s="","",""
+# for ch in str:
+#     if ch.isdigit():
+#         if int(ch)%2==0:
+#             E+=ch  
+#         else:
+#             O+=ch
+#     else:
+#         s+=ch
+# El=sorted(E)   
+# Ol=sorted(O)
+# Ol.reverse()
+# print("Even strDigit is : {}\nOdd strDigit is : {}\nstr of char is : {}".format(("").join(list(E)),("").join(list(O)),s)) 
+# print("Even strDigit is : {}\nOdd strDigit is : {}\nstr of char is : {}".format(("").join(El),("").join(Ol),("").join(sorted(s)))) 
+

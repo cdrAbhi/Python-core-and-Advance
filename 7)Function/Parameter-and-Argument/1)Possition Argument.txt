@@ -1,0 +1,23 @@
+                   I. Possitional Arguments
+                   =========================
+                   
+=>The Default Parameter mechanism in Functions is Possitional Arguments
+=>Possitional Arguments concept says that Every Argument Passing to Every Formal Parameter Based on their Posstion by
+maintaining Order and Meaning for Higher Accuracy. In Otherwords The number of arguments must be equal to Number of
+Formal Parameters.
+=>Possitional Arguments concept always used for Passing Specific Data from Function calls to Function
+Definitions.
+=> PVM gives High Priority for Possitional Arguments
+-------
+Syntax
+--------
+def functionname(paraml ,parm2....., param-n): #function Definition
+  -----------------------------------
+  -----------------------------------
+  -----------------------------------
+
+
+#main program
+functionname(arg1,arg2,arg3..argn-n) # Function Call
+          
+=>Here PVM Passes argl, arg2,...arg-n to param-1 ,param-2...param-n Respectively

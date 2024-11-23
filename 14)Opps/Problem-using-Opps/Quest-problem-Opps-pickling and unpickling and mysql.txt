@@ -1,0 +1,5 @@
+# write a python program which will accept any two numerical values and calculate all Arithematic Operation by using classes and object.
+# write a python program which will select all the record of employee table by using classes and object.
+# write a python program which will fetch all data form mysql employee table and print along with colomn.
+# write a python program which will accept employee values form keyboard and insert those values in employee table by using class and objects.
+# write a python program which demonstarat the concept of pickling and unpickling by using classes and objects.

@@ -1,0 +1,45 @@
+           Files OR Streams in Python
+           ============================
+=>Definition of File
+=>Definition of Stream
+=>Types of Files
+        a) Text Files
+        b) Binary Files
+=>Operations on Files
+        a) Write Operation
+        b) Read Operation
+=>File Opening Modes
+=>Number of Approches to Open the file
+        a) By using open()
+        b) By using " with open() as "
+=>Programming Examples
+--------------------------------------
+=>Function for Reading the Data From the Files
+        a) read()
+        b) readlines()
+=>Function for Writing the Data to the File
+            a) write()
+            b) writelines()
+=>Programming Examples
+--------------------------------------
+=>Working with Random Access files
+        a) seek()
+        b) tell()
+=>Programming Examples
+------------------------------------------------------------
+=>Pickling (Object Serialization) and un-Pickling (Object De-Serialization) Operations
+=>lmplementation of pickle module
+=>Programming Examples
+------------------------------------------------------------
+=>working CSV Files (MS-Excel)--Numpy, Pandas and Matplotlib
+=>lmplementation csv module
+        a) csv.reader()
+        b) csv.writer()
+        c) csv.DictWriter()
+        d) csv.DictReader
+=>Programming Examples
+------------------------------------------------------------
+=>Working with OS Based Operations
+=>lmplementation of os module
+=>Programming Examples
+=-=====================================================

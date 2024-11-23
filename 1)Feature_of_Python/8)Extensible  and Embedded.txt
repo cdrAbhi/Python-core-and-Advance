@@ -1,0 +1,14 @@
+		===========================================
+				8. Extensible 
+				9. Embedded
+		==========================================
+
+8 Extensible:-   Python Programming Provides Its Module Services to Other language 
+                       Programmers for easy to use by writing Less Code with More Meaning.
+		       Since(चूंकि)  Python Programming Provides Its Services to Other languages and hence(इसलिए) Python is One of The Extensible Programming Lang.
+
+
+9. Embedded: Python Programming will use Other language  Services / Libraries also. In 
+                    Otherwords, we cal call Other language code inside of Python Program and Hence Python Programing Lang is Embedded Programming Lang.
+
+=================================x==============================

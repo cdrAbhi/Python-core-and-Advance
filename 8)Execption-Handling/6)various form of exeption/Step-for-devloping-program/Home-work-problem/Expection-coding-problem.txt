@@ -1,0 +1,8 @@
+# Define a programer sub class for dealing with zero division error
+# Define a programmer exception class in such a way that it should work like ZeroDivisionError.
+# write a python progarm which will generate a multiplication table provided the condition must be satisfy
+    #  1.Generate an exception when the number is negeativ
+    #  2.Generate an exception when the number is zero 
+    #  3.Generate the multiplication table when the number is positive
+#write a python programmer which will validate name of the person or place by using the following validate
+    #if name contains number and special symbol then raise exception the name must be purelly alphabet

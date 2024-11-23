@@ -1,0 +1,10 @@
+                                JSON File Concept
+                            =========================
+=> JSON stands for Java Script Object Notation
+=> JSON is one of the Lang Independent Concept.
+=> JSON File is one of the File Format used in Web Application development used exchanging the Data from Browser (Client) to
+Server Side Application bcoz JSON File is One of the Light Weight File Format.
+=> To deal with JSON File Data, in Python Program , we use a Module Called json
+=> JSON 
+-----------
+          x='{"k1":"v1","k2":"v2",,,,,,,,,K-n":"V-n"}'

@@ -1,0 +1,19 @@
+1)write a python program which will accept students detail and write to the file.
+2)write a python program which will accept any type of data and write to the file and save to file until we press @ symbol
+3)write a python program which will display content of any file name (use read and readlines)        
+4)write a python program which will copy the content of one file into another file
+5)write a python program which will copy an image from one file to another file
+6)write a python program which will find number of lines ,numbers of words and number of characters in a file.
+7)write a python program which will get the vowel words only from the given file
+8)write a python program which will read the content from any file and print the content of the file in reverse order .
+
+
+
+
+#write a python program which will accept Emloyee detail Emloyee name ,sal and digistanation and save them in a file by using pickling process.
+#write a python program which will read all the Emloyee record from the file by using unpickling process.
+#write a python program which will accept any  Emloyee number and obtain other detail of Emloyee.
+#write a python program which will accept Student details such as student number ,name ,Marks and collage name fo n number of student and save them in a file.
+#write a python program which will read all the Student records by using unpickling.
+
+

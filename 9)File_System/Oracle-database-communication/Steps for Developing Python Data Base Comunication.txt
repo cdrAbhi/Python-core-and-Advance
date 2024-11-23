@@ -1,0 +1,82 @@
+			==============================================================
+					Steps for Developing Python Data Base Comunication 
+			==============================================================
+=>To develop Python Data Base Comunication Applications, we must follow the following the steps.
+
+	1. import Appropriate Database Related Module and other modules if required.
+	2. Every Python Program Must get CONNECTION from Database Software
+	3. Every Python Program Must create an Object of CURSOR.
+	4. Every Python Program Must Design, Place the QUERY and place it in Cursor object and EXECUTE the Quesry at 
+	    DataBase Software and gets the RESULT from Database Software to Python Program.
+	5. Every Python Program Must PROCESS the Result which was coming from Database Software through cursor object.
+	6. Every Python Program Closes OR Relinquish the Connection from database Software.
+====================================================================================================
+EXPLANATION
+******************************************************************************************************************************************************
+1. import Appropriate Database Related Module and other modules if required.
+----------------------------------------------------------------------------------------------------------------------
+=>If any Python Program want to communiate with Data base Software then we must import Database Related Module.
+=>If Python  Programer want to communicate with ORACLE Database then we must import cx_Oracle OR oracledb.
+		Examples:  import cx_Oracle
+				    import oracledb 
+=>If Python  Programer want to communicate with MySQL Database then we must import mysql.connector
+		Examples:  import mysql.connector
+******************************************************************************************************************************************************
+2. Every Python Program Must get CONNECTION from Database Software
+-------------------------------------------------------------------------------------------------------------------
+=>After importing the Database Related Module, Python Program must get CONNECTION from Database software for Sending 
+   the Query OR Request.
+=>If Python Program want to get the Connection from Database Software then we use connect() which is present all database 
+   modules.
+---------------
+Syntax:			varname=DatabaseModule.connect("Connection URL")
+---------------
+Examples:	Get the connection Oracle Database		
+-----------------	varname=oracledb.connect("Connection URL")
+=>The general format of Connection URL is given Bellow
+							"username/password@DNS/ServiceID"
+									OR
+							"username/password@IPAddress/ServiceID"
+=>Here varname is an object of <class,Datamodule.Connection>
+=>"username" Represents User Name of Oracle Database
+=>"password" Represents Password of Oracle Database
+=>DNS(Domain Naming Service) Represents name of Physical Machine where Database Software(Oracle) Resides 
+		Example: The default DNS of Every Machine is "localhost"
+=>IP Address(Internet Protocol) Represents Address of Physical Machine where Database Software(Oracle) Resides 
+		Examples: the default IP Address is 127.0.0.1 (loop back address)
+=>ServiceID Represents in which name Database Software is Installed in Current Machine.
+	Examples: To find ServiceID of Oracle Data base, we use the Folowing Command at SQL Environment
+			SQL> select * from global_name
+			------------------------
+			GLOBAL_NAME
+			------------------------
+				XE <----Service ID
+=>If we enter any Invalid Details for Connection URL	 then Python Program get Exception from Database Software and whose exception name is "DatabaseError".
+====================================================================================================
+3. Every Python Program Must create an Object of CURSOR.
+******************************************************************************************************************************************************
+=>Once the Python Program gets the connection from Database Software, we must create an object of Cursor. 
+=>A Cursor is an object, whis is used for Carrying the Query OR request from Python program, Handover to Database Software , 
+    make the Query to be executed by Database Software and Bring the Result from Database Software to Python Program.
+=>To create an object of Cursor, we use cursor() which is presen in Connection object
+=>Syntax:    varname=connobj.cursor()
+			here var name is an object of <class, DatabaseModule.Cursor>
+Examples:   cur=con.cursor()
+		here cur is an object of <class, oracledb.Cursor>
+====================================================================================================
+4. Every Python Program Must Design, Place the QUERY and place it in Cursor object and EXECUTE the Quesry at 
+	    DataBase Software and gets the RESULT from Database Software to Python Program.
+*****************************************************************************************************************************************************
+Tmr----at 9:10am Sharp
+
+
+
+
+
+
+
+
+
+
+
+

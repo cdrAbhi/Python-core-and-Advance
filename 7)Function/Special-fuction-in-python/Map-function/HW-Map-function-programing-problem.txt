@@ -1,0 +1,65 @@
+# write a python program which will accept list of numerical values and obtains their square and square root .
+# =========================================
+
+# lst=[2,3,4,5]
+# sql=list(map(lambda n:n*n,lst))
+# sqrtl=list(map(lambda n:round(n**0.5,2),lst))
+# print("Squre value of Orignal value list : {}".format(sql))
+# print("Squre root value of Orignal value list : {}".format(sqrtl))
+
+# write a python program list of value list of salary of employee and give 50% hike to every empoyee salary by using map function.
+# =========================================
+
+# lst=list(round(float(i),2)for i in input("Enter value sepratlly: ").split())
+
+# nlst=list(map(lambda n: n+(n//2),lst))
+# print("Before without hike Emloyee salary list : {}".format(lst))
+# print("New list of Emloyee salary with 50% hike salary : {}".format(nlst))
+
+# =========================================
+# write a python which will compute addition of two list object.
+# =========================================
+
+# case-1 :both list having same length
+# =========================================
+
+# lst1=[1,2,3]
+# lst2=[1,2,3]
+# lst=list(map(lambda x,y:x+y,lst1,lst2))
+# print(lst)
+
+# case-2 :both list having distinct length
+# =========================================
+
+# lst1=[int(v) for v in input("Enter value space seprate").split()]
+# lst2=[1,2,3,4,5]
+# if len(lst2)<len(lst1):
+#     for i in range(len(lst1)-len(lst2)):
+#          lst2.append(0)       
+# else :
+#     for i in range(len(lst2)-len(lst1)):
+#         lst1.append(0)
+
+# print("First list: {}".format(lst1))
+# print("Second list: {}".format(lst2))
+# lst=list(map(lambda x,y:x+y,lst1,lst2))
+# print("Sum list : {}".format(lst))
+
+# write a pyhton program which can accept list of values and find the cube of every element of the list.
+# lst1=[int(v) for v in input("Enter value space seprate").split()]
+# print("Orignal list: {}".format(lst1))
+# lst=list(map(lambda x:x**3,lst1))
+# print("Cube list : {}".format(lst))
+
+# write a python program which will acccept list of numerical value and find squares of positie numbers and cubes of negative number
+# ===================================================
+
+# lst=[int(v) for v in input("Enter value space seprate").split()]
+# print("Orignal list: {}".format(lst))
+# lstp=filter(lambda v:v>0,lst)
+# lstn=filter(lambda v:v<0,lst)
+# lstp=list(map(lambda x:x**2 ,lstp))
+# lstn=list(map(lambda x:x**3,lstn))
+
+# print("Cube of Negative elemenlist : {}".format(lstn))
+# print("square of Positive element list : {}".format(lstp))

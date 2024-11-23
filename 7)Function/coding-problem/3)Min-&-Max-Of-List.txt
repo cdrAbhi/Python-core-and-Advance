@@ -1,0 +1,53 @@
+# ====================================================================================================================
+# write a python program which will accept list of values and find max and min element by using fuction(don't use predefine max() and min() funtion). 
+# ====================================================================================================================
+
+def readvalue():
+    lst=[]
+    print("Enter value and enter # for stop")
+    while(True):
+        v=input()
+        if v=="#":
+            break
+        elif not v.isdigit():
+            print("Invalid input")
+        else:
+            lst.append(int(v))
+    return lst
+    
+def findmax(): #using set and membership operator
+    lst=readvalue()
+    if(len(lst)==0):
+        print("Empty list operation not possible: {}".format(lst))
+    else:
+        max=lst[0]
+        for ele in lst:
+            if ele > max:
+                max=ele
+        else:
+             print("Max value{} : {}".format(lst,max))
+             print("Min value{} : {}".format(lst,findmin(lst)))
+             
+    
+def findmin(lst): #using set and membership operator
+    if(len(lst)==0):
+        print("Empty list operation not possible: {}".format(lst))
+    else:
+        min=lst[0]
+        for ele in lst:
+            if ele<min:
+                min=ele 
+        else:
+            return min            
+
+while(True): 
+    opt=input("For start Enter s : \nEnter E for exit :")  
+    if(not opt.isalpha() or (opt.upper()!='E' and opt.upper()!='S')):
+        print("Invailid input")
+    elif opt.upper()=="E":
+        break
+    else:
+        findmax()
+        
+ 
+            

@@ -1,0 +1,113 @@
+			================================================================
+					Reading the Data Dynamically  from  KeyBoard
+								(OR)
+						input()    OR  input(message)			
+			================================================================
+=>To Read the Data Dynamically  from  KeyBoard, we user Two Pre-Defined Functions. They are.
+
+				1. input()
+				2. input(Message)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) input()
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:      varname=input()
+=>This Function is used for Reading any type of Data from Key Board and placed in LSH Varname in the form <class,'str'>.
+=>Programatically, we can convert  str type data into other type of values by using Type casting Functions.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) input(Message)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:      varname=input(Message)
+=>This Function is used for Reading any type of Data from Key Board and placed in LSH Varname in the form <class,'str'> and also Additionally It gives User-Prompting Message.
+=>Here Message Represents User-Prompting Message
+=>Programatically, we can convert  str type data into other type of values by using Type casting Functions.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Special Points
+------------------------------------------------------
+>>> s="PYTHON"
+>>> s=s+s+s
+>>> print(s)
+PYTHONPYTHONPYTHON
+>>>
+>>> s="PYTHON"
+>>> s=3*s
+>>> print(s)
+PYTHONPYTHONPYTHON
+>>>
+>>>
+>>> s="PYTHON"
+>>> s=s*5
+>>> print(s)
+PYTHONPYTHONPYTHONPYTHONPYTHON
+>>>
+>>>
+>>> lst=[10,"RS"]
+>>> print(lst*5)
+[10, 'RS', 10, 'RS', 10, 'RS', 10, 'RS', 10, 'RS']
+>>> print(2*3)
+6
+>>> s="="
+>>> s=s*10
+>>> print(s)
+==========
+>>> s="="
+>>> s=s*50
+>>> print(s)
+==================================================
+>>> print("**********************************************")
+**********************************************
+>>> print("*"*60)
+************************************************************
+>>> print("#"*60)
+############################################################
+>>> print("K"*40)
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+>>>
+>>>
+>>>
+>>> print("KVR"+"KVR")
+KVRKVR
+>>> print("KVR"*"KVR")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> print("KVR"*4)
+KVRKVRKVRKVR
+>>>
+>>>
+>>> print("KVR"-"KVR")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>>
+>>>
+>>>
+>>> print("HYD"*4*2)
+HYDHYDHYDHYDHYDHYDHYDHYD
+>>> print("HYD"*4+2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print(str(2)+"PYT"*2)
+2PYTPYT
+>>> print((str(2)+"PYT")*2)
+2PYT2PYT
+>>> print("+"*(len("Python")+2))
+++++++++
+>>> print("+"*len("Python")+2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>>
+
+==========================================================
+QUE :: Write a python program which accept two numerical value and compute their addition?
+QUE :: write a  python program which will calculate area of rectangle?
+         print("Area of rectangle is = %0.3"%(float(input())*float(input()))
+QUE :: write a python program which will calculate perimeter(2*(lenght+bredth)) and circum france of rectangel?
+QUE :: write a python program which will calculate area of  circal ()
+QUE:: write python program which will calculate area and perimeter of square.
+
+
+
+

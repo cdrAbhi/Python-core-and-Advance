@@ -1,0 +1,90 @@
+                ========================================================
+                Module Name for developing thread based applications
+                ========================================================
+
+=>To develop any thread based applications, must use a pre-defined module called "threading"
+======================
+=>Details of threading
+===========================
+=>Function in threading Module
+------------------------------
+    1)current_thread()
+    ------------------------------> 
+        => This Function is used for finding thread name.
+          Syntax: -varname=threading.current_thread().name
+    
+    2) active_count()
+    --------------------
+       => Function is used for counting number threads which running
+          Syntax:-varname=threading.active_count()
+-----------------------------------------    
+=>Class Name in threading Module: Thread:
+-----------------------------------------    
+1) Thread(target,args)
+-------------------------
+This Constructor is used for creating an object of child thread by specifying
+target function which is executed by child thread and also specifying values passing to target function
+in the form of tuple.
+Syntax:- childthreadname=threading.Thread(target=functioname, args=(va11,va12..val-n)
+Example: t1=threading.Thread(target=generate,args=(10,) )
+
+
+2) setName(str) or name
+-------------------------
+This function is used for setting user-friendly name to thread instead of giving default thread name
+        Syntax: childthreadname.setName(str)
+        (OR)
+        Syntax: childthreadname . name=str
+Examples:
+    t1.setName("Rossum")
+        or
+    t1.name="Rossum"
+
+
+3)getName() or name
+-------------------------
+getName() (or) name
+=>This function is used for obtaing name of thread.
+=>Syntax:- threadobj.getName()
+             (or)
+            threadobj.name
+Example: - tl=threading-Thread(target=multable,args=(19,))
+            print(tl .getName()) # Thread-1
+            (or)
+            print(tl.name) # Thread-1
+
+4)run()
+-------------------------
+=> run(): It is one of null body method pf thread class
+	It is used for defining logic of python program, which is executed by child thread
+	This method must be overridden inside of sub class of Thread class .
+Syntax: class <classname>(threading.Thread):
+            	def run(self):
+                ----------------
+               ---------------
+
+
+5)start():
+-------------------------
+This function is used for dispatching or sending the child thread to targeted function by
+passing the values as args in the form of tuple
+    Syntax: childthreadname.start()
+    Example: t1.start()
+
+6)is_alive()
+-------------------------
+is_alive(): This Function can be to check the exeution status of child thread.
+This Function returns True provided the thread is under execution
+This Function returns False provided the thripd is not yet strated or completed execution
+
+-------------------------
+7)join()
+-------------------------
+7) join(): This function is used for making the child threads to join with main thread after their
+completion.
+            Syntax: childthreadname1.join()
+                    childthreadname2.join()
+                    -----------------------
+                    childthreadname-n.join()
+
+----------------------- -----------------------------------------

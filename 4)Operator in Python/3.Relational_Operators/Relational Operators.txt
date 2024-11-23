@@ -1,0 +1,40 @@
+			========================================================
+					3. Relational Operators ( Comparision Operators)
+			========================================================
+=>The purpose of Relational Operators is that "To Compare Two Object Values. "
+=>If the Relational Operator connected with Two Object Values then It is Called Relational  Expression.
+=>The Result of  Relational  Expression is either True or False.
+=>The  Relational  Expression is also Called Test Condition.
+=>In Python Programming, we have 6 Types of Relational Operators. They are
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SLNO		SYMBOL			MEANING			EXAMPLES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.			>				greater than		print(10>5)--------------------True
+											print(10>20)-------------------False
+
+2.			<				less than			print(10<5)--------------------False
+											print(10<20)------------------True
+
+3.			==				Equality			print(10==20)-----------------False
+						(Double Equal to)		print(10==10)-----------------True
+
+4.			!=				Not Equal to		print(10!=20)------------------True
+											print(10!=10)------------------False
+
+5.			>=				greater than		print(10>=20)-----------------False
+							or equal to		print(10>=10)-----------------True
+
+6.			<=				less than			print(10<=20)-----------------True
+							or equal to		print(10<=5)--------------------False
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+------------------
+>>> a=10>=20
+>>> print(a)--------------------False
+>>> b=True>=False
+>>> print(b)-------------------True
+>>> b=False>=False
+>>> print(b)------------------True
+>>> b=False>False
+>>> print(b)------------------False
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,30 @@
+# write a python program which will accept list of numerical values and find their sum by using reduce fucntion.
+# =========================================
+# import functools
+# lst=[int(val) for val in input("ENter list of value :").split()]
+# s=functools.reduce(lambda x,y:x+y,lst)
+# print("Org list: {}".format(lst))
+# print("Sum list{}  : {}".format(lst,s))
+
+# write a python program which will accept list of numerical values and find the heighest value by using reduce fucntion.
+# =========================================
+
+# import functools
+# lst=[int(val) for val in input("ENter list of value :").split()]
+# s1=functools.reduce(lambda x,y: x if x>y else y ,lst)
+# s2=functools.reduce(lambda x,y: y if x>y else x ,lst)
+# print("Org list: {}".format(lst))
+# print("Max{}  : {}".format(lst,s1))
+# print("Min{}  : {}".format(lst,s2))
+
+# write a python program which will accept list get a single line by using reduce fucntion.
+# =========================================
+
+import functools 
+
+lst=[val for val in input("ENter space seprate value").split()]
+res=functools.reduce(lambda v,cv:v+cv,lst)
+print("Org list: {}".format(lst))
+print("SingleLine{}  : {}".format(lst,res))
+
+

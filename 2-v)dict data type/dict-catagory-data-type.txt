@@ -1,0 +1,38 @@
+                          dict
+           =====================================================
+=> dict is on the pre-defined class and treated as Dict Data Type.
+=> The purpose of Dict Category Data Type is that to Store the Data in the form of (Key,value).
+=> In(Key,VaIue), the Values of Key are always Unique and the Values of Value may or may not be
+Unique.
+=> To Store (Key,Value) in dict, we use Curly Braces and They Must be Separated by Comma.
+=> Syntax: :Va11, Key2:Va12
+Key-n:Val-n}
+=> here Keyl ,Key2....Key-n are called Values of Key.
+=> here Vall ,Va12....VaI-n are called Values of Value.
+=> An Obejct of dict maintains Insertion Order.
+=> Object of dict is MUTABLE.
+=> the object of dict, The values of Key are IMMUTABLE and Values of Value are MUTABLE.
+=> We have Two Types of Dict Objects. Theya are
+   a) Empty Dict
+   b) Non-Empty Dict
+a) Empty Dict
+=============
+=> An Empty Dict is one, which not contains any Elements and whose is Zero
+=> Syntax: dictObj = {}
+             (OR)
+           dictObj = dict()
+a) NOnEmpty Dict
+=============
+=> An NonEmpty Dict is one, which contains Elements and whose is greater Zero
+=> Syntax: dictObj = {key:val,key2:val2,key3:val3,key4:val4}
+             
+===================================================================================
+=>Syntax for adding (Key,VaIue) to Non-Dict OR Empty Dict
+    dictobj[Key-n]=[Val-n]
+    =>here Keyl ,Key2....Key-n are called Values of Key.
+    =>here Vall ,Va12....VaI-n are called Values of Value.
+
+
+
+
+

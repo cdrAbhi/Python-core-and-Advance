@@ -1,0 +1,48 @@
+                           Combination set with set, list and tuple                            
+                           ========================================
+Case-1: It is Not Possible to Define One Set in Another Set bcoz sets are unhashable type(Not Possible to apply yo Indexing + Not Possible to Modifye Examplese >>> s1={10, "Rossum", (16,19,18},{77,76,75), "OUCET"}-TypeError: unhashable type: 'set'
+=======
+Case-2: It is Not Possible to Define One List in Another Set bcoz sets are unhashable type (Not Possible to apply yo Indexing + Not Possible to Modify)
+========
+ Examples
+>>> s1={10,"Rossum", [16,19,18], [77,76,75], "OUCET")TypeError: unhashable type: 'list'
+
+Case-3: It is Possible to Define One Tuple in Another Set bcoz tuples are Immutable
+
+ Examples
+ >>> s1={10, "Rossum", (16,19,18), (77,76,75), "OUCET"}
+ >>> print(s1,type(s1))-------{(77, 76, 75), (16, 19, 18), 'OUCET', 'Rossum', 10} <class 'set'>
+for val in s1:
+    print(val)
+
+. . .       
+       (77, 76, 75) <class •tuple'>
+       (16, 19, 18) <class 'tuple'*
+       "OUCET" <class •str'>
+       "Rossum" <class •str'>
+       10 <class 'int'>
+. . .
+
+
+Case-4: It is Possible to Define One Set in Another List bcoz List are mutable and allows us to locate set
+=====objects by using Indices.
+   Examples
+     lst= [10,'Rossum', {16, 18, 19}, {75, 76, 77), 'OUCETI']
+     print(lst,type(lst))-----------------------[10,'Rossum', {16, 18, 19}, {75, 76, 77}, 'OUCETI'],<class 'list'>
+     print(lst[1],type(lst[1])) ------------------18, 19} <class 'set'>
+     lst[2].add(15)
+     print(lst,type(lst))-----------------------[10,'Rossum', {16, 18,15 19}, {75,76, 77}, 'OUCETI'],<class 'list'>
+     lst[-2].add(66)
+     print(lst,type(lst))-----------------------[10,'Rossum', {16, 18,15,19}, {75,76,66, 77}, 'OUCETI'],<class 'list'>
+  
+Case-5 : It is Possible to define one Set in Another tuple bcoz Tuples are Immutable and allows us to allocate set object by using indexces.
+======
+ xamples
+tpl=(10,'Rossum', {16, 18, 19}, {75, 76, 77}, 'OUCET') 
+print(tpl,type(tpl))---------------------------------(10,'Rossum', {16, 18, 19), {75, 76, 77), 'OUCET) «class •tuple'*
+tpl[2].add(15)
+print(tpl,type(tpl))---------------------------------(10,'Rossum', {16,15,18, 19), {75, 76, 77), 'OUCET) «class •tuple'*
+lst[-2].add(66)
+print(lst,type(lst))-----------------------(10,'Rossum', {16, 18,15,19}, {75,76,66, 77}, 'OUCETI'),<class 'list'>
+  
+ 

@@ -1,0 +1,6 @@
+              INTRODUCTION TO FILES---C , C++,. Java,Python
+              =======================================
+              
+=> In Real Operation of Organization---->Data---useful for Taking Effective Decisions
+            —a) Temporary Storage-m>Non-Persistant Applications
+             b) Permanent Applications

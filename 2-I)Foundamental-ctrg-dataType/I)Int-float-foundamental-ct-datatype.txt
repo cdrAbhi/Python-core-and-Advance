@@ -1,0 +1,234 @@
+                          I. int
+                      ----------
+int is one of the pre-defined class and It is treated as Fundamental Type.
+=>The purpose of 'int' data type is that "To Store Integer Data OR Literals OR Whole Numbers OR
+Integral Values( Numbers without Decimal Place)".
+Examples: sno,acno,empno,adcno..etc
+Examples                           
+Python Instructions              Output
+a=12            ----------------12-----------
+print(a,type(a))  ----------------12 <class 'int'>---
+a=100
+b=200
+c=a+b     
+print(a,type(a))---------------100 <class 'int'>---
+print(b,type(b))---------------200 <class 'int'>------
+print(c,type(c))---------—-----300 <class 'Int'>-----
+
+=> with 'int' data type, we can also Store Different Number System Values.
+
+
+
+=>ln Programming Lang, we have 4 Types of Number System . They are
+-------------------------------------------------------------------
+ I. Decimal Number System
+ 2. Binary Number System
+ 3. Octal Number System
+ 4. Hexa Decimal Number System
+
+-------------------------------------
+1. Decimal Number System
+-------------------------------------
+ =>Decimal Number System used by all the Human Beings for their Day-to-Day Transactions.
+ =>Decimal Number System is one of the Default Number Systems4
+ =>DecimaI Number System contains the following
+   Digits: 0123456789 -------TotaI Digits—1O
+   Base : 10
+   Base 10 literals are Called Decimal number System Values.
+
+--------------------------
+2. Binary Number System
+------------------------
+ =>Binary Number System Values understanble by OS and Processor During Program Execution.
+ =>Binary Number System contains the following
+   Digits: 0 1 —Total Digits: 2
+   Base : 2
+   Base 2 Literals are called Binary Number System Values
+   Python Programming, To Store Binary Number System Values, Binary Values Must be Preceded
+    by a letter either '0b' OR '0B'
+ =>Syntax:varname=Ob Binary Values
+           OR
+ =>Syntax:varname=OB Binary Values
+----------------------------------------------------------------------------------------
+examples
+ Inputs                  output
+ =======           ========================
+a=Ob101
+print(a,type(a))   -----5 <class 'int'>-----
+bin(5)             ------'Ob101'
+a=OB1010
+print(a,type(a))   ------10 <class 'int'>
+bin(10)            ------'Ob1010'
+a=OB11100011
+print(a,type(a))   -----227 <class 'int'>----
+bin(227)           -----'Obli100011'----
+a=0b00112     ------invalid digit '2' in binary literal----
+
+NOTE: bin() is used converting Decimal, Octal and Hexa Decimal Into Binary format
+
+----------------------------------------------------------
+            
+
+         3. Octal Number System
+        -------------------------
+=> Octal Number System Values understanble by Micro Processor Kits(8086 OR ALP )
+
+=> Octal Number System contains the following
+    Digits: 0 1 2 3 4 5 6 7 -----Total Digits : 8
+    Base : 8
+
+=> All Base 8 Literals are called Octal Number System Values
+
+=>ln Python Programming, To Store Octal Number System Vlaues, Octal Values Must be Preceded
+  by a letter either '00' OR '00'.
+
+=>Syntax: varname=Oo Octal Values
+          OR
+=>Syntax: varname=OO Octal Values
+
+Examples
+a=0022
+print(a,type(a))
+a=00123
+18 <class 'int'>
+
+NOTE: oct() is used converting Decimal, Binary and Hexa Decimal Into Octal format
+----------------------------------------------------------------------------------
+
+
+----------------------------------------------------------
+            
+
+         3. Hexa Decimal Number System
+        -------------------------------------------
+=> Hexa Decimal Number System Values Used in Development of OSes.
+=> Hexa Decimal Number System contains the following
+=> Digits: 0 1 2 3 4 5 6 7 8 9
+           A(10) B(ll) C(12) D(13) E(14) F(15) —Total Digits
+=>  Base : 16
+=> Base 16 Literals are called Hexa Decimal Number System Values
+=> Python Programming, To Store Hexa Decimal Number System Vlaues, Hexa Decimal Values Must
+   be Preceded by a letter either 'Ox' OR 'OX'.     
+   => Syntax: varname=Ox Hexa Decimal Values
+               OR 
+   => Syntax: varname=OX Hexa Decimal Values
+
+NOTE: hex() is used converting Decimal, Binary and Octal Into Hexa Decimal format.  
+----------------------------------------------------------------------------------
+
+Examples     output
+=========    ============
+
+a=0459       SyntaxError: leading zeros in decimal integer literals are not permitted;
+             prefix for octal integers
+             use an 0o for Octal number
+
+
+
+              #Base Conversion Functions in Python#
+             =======================================
+ =>ln Python Programming, we have 3 Types of "se Conversion Functions .
+   1. bin()
+   2. oct()
+   3. hex()
+
+ => They are
+
+            I. bin()
+           ===========
+=> Syntax: varnam=bin( Octal, Decimal, Hexa Decimal)
+=> This Function is used for Converting Decimal , Octal and Hexa Decimal Values into Binary Values.
+ Examples
+ ========
+ a=15
+ val=bin(a)
+ print(val) ---------->0b1111
+
+ a=0o17
+ val=bin(a)
+ print(val)----------->0b111
+ 
+
+ a=OxF
+ val=bin(a)
+ print(val)----------->0b1111
+
+-------------------------------------------------------------------
+
+
+            II. oct()
+           ===========
+=> Syntax: varnam=oct( binary, Decimal, Hexa Decimal)
+=> This Function is used for Converting Decimal , Binary and Hexa Decimal Values into Octal Values.
+ Examples
+ ========
+ a=15
+ val=oct(a)
+ print(val) ---------->0o17
+
+ a=0o17
+ val=oct(a)
+ print(val) ---------->0o17
+
+ a=OxF
+ val=oct(a)
+ print(val) ---------->0o17
+
+
+-------------------------------------------------------------------
+
+
+                 III.hex()
+           ==========================
+=> Syntax: varnam= hex( binary, Decimal, Octal)
+=> This Function is used for Converting Decimal , Binary and Octal Values into Hexa Decimal Values.
+ Examples
+ ========
+ a=15
+ val=hex(a)
+ print(val) ---------->0xf
+
+ a=0o17
+ val=oct(a)
+ print(val) ---------->0xf
+
+ a=OxF
+ val=oct(a)
+ print(val) ---------->0xf
+
+
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  2. float
+                                ============
+
+ => "float" is one of the pre-defined class and treated as Fundamental Data Type.
+ => purpose of float data type is that "To Store Real Constant Values(value form = p/q where q!=0) Or floating point value
+ => float data type also stores the floating point data OR ReallConstant Values in the form Scientific Notation.
+    => S.N.D(scientific notaion data) : (Mantisa e Exponent) : exm: 2e4
+
+                                           |2|  |e|  |4| 
+
+                                           |2|  |10| |4| : 2*10**4 = 2*10000 =20000
+                                           (Note: In Python 2e4 == 2E4 )
+
+
+ => Advantage of scientific notation is you save the memory space.(instead of writting 2000000 = we can write 2e6)
+    => Scientific Notation is that "To Take Minimal Memory Space for Storing Large Volume Normal Floating Point Values".
+   exm: 
+   ====
+   a=O.00000000000000000000000000000000000000000000000005
+   prit(a,type(a))------------    5e-50 <class 'float'>
+

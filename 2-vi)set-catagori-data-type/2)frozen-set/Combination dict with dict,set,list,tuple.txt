@@ -1,0 +1,258 @@
+==============================================================================================
+					Combination dict with dict,set,list,tuple
+==============================================================================================
+Case-1:    dict in dict----Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Examples
+--------------------
+>>> d1={"sno":10,"name":"RS","IntMarks":{"C":18,"C++":17,"OS":19},"ExtMarks":{"C":70,"C++":65,"OS":72},"cname":"OUCET"}
+>>> print(d1,type(d1))
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 18, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'} <class 'dict'>
+>>> for k in d1:
+...		print(k)
+...
+		sno
+		name
+		IntMarks
+		ExtMarks
+		cname
+>>> for k in d1:
+...		print(k,"--->",d1.get(k))
+...
+		sno ---> 10
+		name ---> RS
+		IntMarks ---> {'C': 18, 'C++': 17, 'OS': 19}
+		ExtMarks ---> {'C': 70, 'C++': 65, 'OS': 72}
+		cname ---> OUCET
+>>> for k,v in d1.items():
+...		print(k,"---->",v)
+...
+		sno ----> 10
+		name ----> RS
+		IntMarks ----> {'C': 18, 'C++': 17, 'OS': 19}
+		ExtMarks ----> {'C': 70, 'C++': 65, 'OS': 72}
+		cname ----> OUCET
+
+>>> for k,v in d1.items():
+...		print(k,type(k),type(d1))
+...
+		sno <class 'str'> <class 'dict'>
+		name <class 'str'> <class 'dict'>
+		IntMarks <class 'str'> <class 'dict'>
+		ExtMarks <class 'str'> <class 'dict'>
+		cname <class 'str'> <class 'dict'>
+>>> for k,v in d1.items():
+...		print(k,v,type(v),type(d1))
+...
+		sno 10 <class 'int'> <class 'dict'>
+		name RS <class 'str'> <class 'dict'>
+		IntMarks {'C': 18, 'C++': 17, 'OS': 19} <class 'dict'> <class 'dict'>
+		ExtMarks {'C': 70, 'C++': 65, 'OS': 72} <class 'dict'> <class 'dict'>
+		cname OUCET <class 'str'> <class 'dict'>
+
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 18, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'}
+>>> print(d1["IntMarks"])------{'C': 18, 'C++': 17, 'OS': 19}
+>>> for k,v in d1["IntMarks"].items():
+...		print(k,"--->",v)
+...
+			C ---> 18
+			C++ ---> 17
+			OS ---> 19
+>>> for k,v in d1.get("ExtMarks").items():
+...		print(k,"--->",v)
+...
+			C ---> 70
+			C++ ---> 65
+			OS ---> 72
+--------------------------------------
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 18, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'}
+>>> d1["IntMarks"]["C"]=20
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 20, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'}
+>>> d1["ExtMarks"]["DBMS"]=65
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 20, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72, 'DBMS': 65}, 'cname': 'OUCET'}
+>>> d1["ExtMarks"].pop("DBMS")
+65
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'IntMarks': {'C': 20, 'C++': 17, 'OS': 19}, 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'}
+>>> d1.pop("IntMarks")
+{'C': 20, 'C++': 17, 'OS': 19}
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET'}
+>>> d1["IntMarks"]={"C":20,"C++":16,"OS":13}
+>>> print(d1)
+{'sno': 10, 'name': 'RS', 'ExtMarks': {'C': 70, 'C++': 65, 'OS': 72}, 'cname': 'OUCET', 'IntMarks': {'C': 20, 'C++': 16, 'OS': 13}}
+==================================================================================================
+Case-2:    dict in set--Not Possible bcoz neither Indexing  nor updation possible--Unhashable type
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> s1={10,"RS",{"C":20,"C++":20},"OUCET"}------TypeError: unhashable type: 'dict'
+==================================================================================================
+Case-3:    dict in tuple---->Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> t1=(10,"RS",{"C":10,"C++":20},"OUCET")
+>>> print(t1,type(t1))--------------(10, 'RS', {'C': 10, 'C++': 20}, 'OUCET') <class 'tuple'>
+>>> for val in t1:
+...		print(val,type(val))
+...
+		10 <class 'int'>
+		RS <class 'str'>
+		{'C': 10, 'C++': 20} <class 'dict'>
+		OUCET <class 'str'>
+>>> for x in t1[2]:
+...     print(x)
+...
+		C
+		C++
+>>> for k,v in t1[2].items():
+...		print(k,"--->",v)
+...
+		C ---> 10
+		C++ ---> 20
+>>> t1[2]["C"]=15
+>>> print(t1,type(t1))-----(10, 'RS', {'C': 15, 'C++': 20}, 'OUCET') <class 'tuple'>
+>>> t1[-2]["C++"]=18
+>>> print(t1,type(t1))-------(10, 'RS', {'C': 15, 'C++': 18}, 'OUCET') <class 'tuple'>
+--------------------------------
+Special Point
+--------------------------------
+>>> x=100,"TR",{"TS":"HYD","KAR":"BANG","MH":"MUM"},"OUCET"
+>>> print(x,type(x))------(100, 'TR', {'TS': 'HYD', 'KAR': 'BANG', 'MH': 'MUM'}, 'OUCET') <class 'tuple'>
+>>> for k,v in x[-2].items():
+...		print(k,v)
+...
+		TS HYD
+		KAR BANG
+		MH MUM
+==================================================================================================
+Case-4:    dict inlist---------------->Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> lst=[100,"TR",{"TS":"HYD","KAR":"BANG","MH":"MUM"},"OUCET"]
+>>> print(lst,type(lst))
+[100, 'TR', {'TS': 'HYD', 'KAR': 'BANG', 'MH': 'MUM'}, 'OUCET'] <class 'list'>
+>>> for val in lst:
+...     print(val,type(val),type(lst))
+...
+100 <class 'int'> <class 'list'>
+TR <class 'str'> <class 'list'>
+{'TS': 'HYD', 'KAR': 'BANG', 'MH': 'MUM'} <class 'dict'> <class 'list'>
+OUCET <class 'str'> <class 'list'>
+>>> for k in lst[-2].keys():
+...     print(k,"-->",lst[-2].get(k))
+...
+TS --> HYD
+KAR --> BANG
+MH --> MUM
+>>> for k in lst[-2].keys():
+...     print(k,"-->",lst[2][k])
+...
+TS --> HYD
+KAR --> BANG
+MH --> MUM
+>>> lst[-2]["AP"]="VIJ-VIJAG"
+>>> print(lst,type(lst))
+[100, 'TR', {'TS': 'HYD', 'KAR': 'BANG', 'MH': 'MUM', 'AP': 'VIJ-VIJAG'}, 'OUCET'] <class 'list'>
+>>> lst.insert(2,{"hb1":"Read","hb2":"Attend","hb3":"Practice"}
+... )
+>>> print(lst,type(lst))
+[100, 'TR', {'hb1': 'Read', 'hb2': 'Attend', 'hb3': 'Practice'}, {'TS': 'HYD', 'KAR': 'BANG', 'MH': 'MUM', 'AP': 'VIJ-VIJAG'}, 'OUCET'] <class 'list'>
+>>> for k,v in lst[2].items():
+...     print(k,"-->",v)
+...
+hb1 --> Read
+hb2 --> Attend
+hb3 --> Practice
+==================================================================================================
+Case-5:   set in dict-----------Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> d1={"sno":10,"name":"Surya","IntMarks":{15,20,18},"cname":"OUCET"}
+>>> print(d1,type(d1))
+{'sno': 10, 'name': 'Surya', 'IntMarks': {18, 20, 15}, 'cname': 'OUCET'} <class 'dict'>
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> {18, 20, 15} ---> <class 'set'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+>>> d1["IntMarks"]
+{18, 20, 15}
+>>> d1["IntMarks"].add(15)
+>>> print(d1,type(d1))
+{'sno': 10, 'name': 'Surya', 'IntMarks': {18, 20, 15}, 'cname': 'OUCET'} <class 'dict'>
+>>> d1["IntMarks"].add(125)
+>>> print(d1,type(d1))
+{'sno': 10, 'name': 'Surya', 'IntMarks': {18, 20, 125, 15}, 'cname': 'OUCET'} <class 'dict'>
+>>> d1["ExtMarks"]={34,56,16,67}
+>>> print(d1,type(d1))
+{'sno': 10, 'name': 'Surya', 'IntMarks': {18, 20, 125, 15}, 'cname': 'OUCET', 'ExtMarks': {56, 16, 34, 67}} <class 'dict'>
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> {18, 20, 125, 15} ---> <class 'set'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+ExtMarks ---> {56, 16, 34, 67} ---> <class 'set'> <class 'dict'>
+==================================================================================================
+Case-6:   tuple in dict----------Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> d1={"sno":10,"name":"Surya","IntMarks":(15,20,18),"cname":"OUCET"}
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> (15, 20, 18) ---> <class 'tuple'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+>>> d1["IntMarks"]=tuple(sorted(d1["IntMarks"]))
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> (15, 18, 20) ---> <class 'tuple'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+>>> d1["ExtMarks"]=34,56,78
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> (15, 18, 20) ---> <class 'tuple'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+ExtMarks ---> (34, 56, 78) ---> <class 'tuple'> <class 'dict'>
+>>> d1["ExtMarks"][-1]
+78
+>>> d1["ExtMarks"][2]
+78
+>>> d1["ExtMarks"][len(d1["ExtMarks"])-1]
+78
+==================================================================================================
+Case-7:   list in dict----------Possible
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> d1={"sno":10,"name":"Surya","IntMarks":[15,20,18],"cname":"OUCET"}
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> [15, 20, 18] ---> <class 'list'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+>>> for val in d1["IntMarks"]:
+...     print(val)
+...
+15
+20
+18
+>>> d1["IntMarks"].insert(1,18)
+>>> for k,v in d1.items():
+...     print(k,"--->",v,"--->",type(v),type(d1))
+...
+sno ---> 10 ---> <class 'int'> <class 'dict'>
+name ---> Surya ---> <class 'str'> <class 'dict'>
+IntMarks ---> [15, 18, 20, 18] ---> <class 'list'> <class 'dict'>
+cname ---> OUCET ---> <class 'str'> <class 'dict'>
+================================================x===========================================

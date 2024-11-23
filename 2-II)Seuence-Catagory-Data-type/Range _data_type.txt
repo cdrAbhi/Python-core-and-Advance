@@ -1,0 +1,225 @@
+                                            range
+                                        =========
+=> range is one of the pre-defined class and treated as Sequence Data Type.
+=>The purpose of range data type is that "To Store Sequence of Numerical Integer Values (range) by maintaining Equal Interval of Value either in Forward or Backward Direction"
+=> On the object of range, we can perform Both Indexing and Slicing Operations.
+=> range data type also maintains Insertion Order
+=> obejct of range data type belongs to IMMUTABLE bcoz range' object does not support item
+assignment
+     example:
+     =======
+
+>>>r=range(500, 521, 5)
+>>>for val in r:
+            print(val)
+. . .
+    500
+    510
+    515
+    520
+    505  . . .
+> > > r[0] ----------------------------500
+> > > r[1] ----------------------------505
+> > > r[1]=200 ----------------------range' object does not support item assignmen
+
+
+=> To Store Sequence of Numerical Integer Values(range) by using range data type, we have 3 Types of Syntaxes.
+========
+Syntaxes
+========
+Syntax-l : varname=range(Value)
+-------------------------------------------
+=> This Syntax generates range of Values from O to Value-1
+------------------------------------------------
+
+r=range(5)
+print(r,type(r))  -----------------------------range(O, 10) <class •range'>
+for val in r:
+print(val)
+. . . 0
+      1
+      2
+      3
+      4 . . . 
+
+
+Syntax-ll : varname=range(star,stop)
+-------------------------------------------
+Syntax generates range of values from Start to Stop-I Values.
+Examples
+=========
+>>> r=range(10,16)
+print(r,type(r))-----------------range(10, 16) <class 'range'>
+for val in r:
+print(val)
+' ' '10
+      11
+      12
+      13
+      14
+      15 ' ' '
+
+=> The above Syntaxes Generates range of values in FORWARD Direction with Default STEP as I.
+
+Syntax-III : varname=range(star,stop,step)
+-------------------------------------------
+=>This Syntax generates range of Values in FORWARD OR BACKWARD Direction from Start to Stop-I 
+      by maintaining Equal Interval Of STEP Value.
+Examples:
+=======
+r=range(10,21, 2) 
+for val in r:
+   print(val)
+10
+12
+14
+16
+18
+20
+-------------
+for val in range(20,9,-2):
+print(val)
+. . . 20
+      18
+      16
+      14
+      12
+      10 . . .
+Q4) -10, -11, -12, -13, -14, -15, -16  =>range(-10,-17,-1)
+for val in range(-10,-17,-1):
+print(val)
+. . .  - 20
+       - 18
+       - 16
+       - 14
+       - 12
+       - 10 . . .
+
+Syntax-lV : varname=range(Value)
+-------------------------------------------
+
+QI) 01 234516 789  ----range(10) OR  range(0,10) OR range(0,10,1)
+for val in range(10):
+   print(val)
+
+. . . 0
+      1
+      2
+      3
+      4 
+      5
+      6
+      7
+      8
+      9  . . .
+
+Q2) 10 11 12 13 14 15 16 17 18 19 20  ----range(10,21) OR  range(10,21,1)
+for val in range(10,21):
+   print(val)
+
+. . . 10
+      11
+      12
+      13
+      14 
+      15
+      16
+      17
+      18
+      19
+      20   . . .
+
+Q3) 100 101 102 103 104 105   ----range(100,106) OR  range(100,106,1)
+
+for val in range(100,106):
+   print(val)
+
+. . . 100
+      101
+      102
+      103
+      104 
+      105  . . .
+
+
+
+
+
+5) 10 ,9 ,8 ,7    range(10,8,-1) 
+
+
+======================================================
+
+
+special point
+============================
+r= range(1000,1020,2)
+print(r,type(r)) -----------------range(IOOO, 1020, 2) <class 'range'>
+r=range(1000,1010,2)
+>>> print(r,type(r))-------------range(1000, 1010, 2) <class 'range'>
+r[O]-------------------------1000
+r[-1]-------------------------1008
+r[-2]-------------------------1006
+r[2]---------------------------1004
+r[120]------------------------IndexError: range object index out Of range
+
+for val in
+   print(val)
+''''  1
+      1000
+      1002
+       1004 '''
+
+
+for val in r[0:3][::-1]:
+      print(val)
+...
+...
+    1004
+    1002
+    1000
+...
+...
+
+>>> rang(100,501,100)[-1]---------------------------------500
+>>> rang(100,501,100)[-len(r)]----------------------------500
+>>> rang(100,501,100)[len(r)]-----------------------------500
+>>> rang(100,501,100)[-len(r)+len(r)+1]-----------------500
+-------------------------------------------------------
+
+IndexError: range object index out of range
+>> for val in range(500,521,5)[-120:120]:
+          print(val)
+...
+...
+   500
+   505
+   510
+   515
+   520
+...
+...
+
+================================================
+
+
+
+
+
+Examples--Coding
+QI) 01 2345 6789
+Q2) 10 11 12 13 14 15 16 17 18 19 20
+Q3) 100 101 102 103 104 105
+------------------------------------
+Q4)-10 -11 -12 -13 -14 -15 -16
+Q5) 10 9 8 7 6 5 4 3 2 1
+Q6) -10 -9 -8 -7 -6 -5 -4-3 -2 -1
+Q7) -1 -2 -3-4-5 -6-7 -8 -9 -10
+------------------------------------
+Q8) 10 12 14 16 18 20
+Q9) 100 110 120 130 140 150
+Q10) -20 -18 -16 -14 -12 -10
+Q11) -1000 -900 -800 -700 -600-500
+-----------------------------------------------
+Q12) -5-4-3 -2 -1 0 1 2 3 4 5
+---------------------------------------

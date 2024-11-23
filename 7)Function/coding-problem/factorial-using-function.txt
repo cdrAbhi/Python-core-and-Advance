@@ -1,0 +1,35 @@
+# ====================================================================================================================
+# write a python program which will accept any integer value and calculate it's factorial by using function 
+# ====================================================================================================================
+
+def readvalue():
+    while(True):
+        val=input("Enter value : ")
+        if(not val.isdigit()):
+            print("value {} is Invalid input enter valid input".format(val))
+        else:
+            return int(val)
+            break
+    
+def findfact():
+    n=readvalue()
+    if n==0:
+        print("factorial {} : {}".format(n,0))
+    else:    
+        f=1
+        for val in range(1,n+1):
+            f*=val
+        else:
+            print("factorial {} : {}".format(n,f))
+
+ 
+while(True): 
+    opt=input("For start Enter s : \nEnter E for exit :")  
+    if(not opt.isalpha() or (opt.upper()!='E' and opt.upper()!='S')):
+        print("Invailid input")
+    elif opt.upper()=="E":
+        break
+    else:
+        findfact()
+ 
+            

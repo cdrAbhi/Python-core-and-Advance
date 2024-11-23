@@ -1,0 +1,57 @@
+			==============================================================
+				Number of Approaches to Develop the Programs in Python
+							(OR)
+				Number of Approaches for Problem Solving in Python
+			==============================================================
+----------------
+Program
+----------------
+=> Set of Optimized Instructions is called Program.
+=> Optimized Instructions are nothing But Takes Less Memory Space(Space Complexity)  and Less Execution Time (Time 
+      Complexity) .
+=> The purpose of Develping or Writing  the programs is that "To solve Real Time Problems Or Tasks".
+=> After writing set of Optimized Instructions, we save them on some file name with extension .py (Source Code)
+=> In Python Programming, we have 2 Types of Approaches to Develop the Programs. They are
+
+				1. Interative Approach
+				2. Batch Mode Approach
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Interative Approach
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Interative Approach, Python Programmer can Issue One Statement at a time and gets One Output at a time
+=> Interative Approach is Most Useful to test One Instruction at a time. But It is not recommended to write Group of Instructions bcoz we are unable to save those instructions and more over we can't re-use in another part of Program  / project.
+---------------------------------------------------------------------------------------------
+=>Example of Interative Approach Softwares:
+						1) Python Command Prompt
+						2) Python IDLE Shell
+=>Once we  install Python Software, we get the above Two Execution Environments
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Batch Mode Approach
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>In Batch Mode Approach, Python Programmer will write  Group of Instructions and save them on some file name with 
+   extension .py (Source Code ) 
+=>Batch Mode Approach is Most Useful to Develop Real Time Applications in the form of Programs.
+------------------------------------------------------------------------------------------------
+=>Example of Batch Mode Approach Approach Softwares:
+							
+							1) Python IDLE Shell  (Available on install Python Software)
+							2) THIRD PARTY IDEs ( Integrated Development Environment)
+									a) Pycharm
+									b) Anakonda Jupiter Note Book
+									c) Anakonda Spider
+									d) Atom
+									e) VS Code
+									f) Google Clab
+									g) Sublime Text....etc 
+									h) Edit Plus --Best for Learners
+
+Note: To run the Python Program from Windows Command  then we have a tool called " python" or "py"
+-------
+=>Syntax:    python  filename.py
+		(OR)
+	     py  filename.py
+
+Examples:    E:\KVR-python-9am\batch-mode> python sumex3.py
+					(OR)
+Examples:    E:\KVR-python-9am\batch-mode> py  sumex3.py
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------

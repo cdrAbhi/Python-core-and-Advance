@@ -1,0 +1,46 @@
+		===============================================================
+				Python Data Base Comunication (PDBC)
+		===============================================================
+Index----Applicable for Both Oracle and MySQL, Mongo DB, PostgreySQL, DB2, Sqlite3--RDBMS
+----------------------------------------------------------------------------------------------------------------------
+=>Limitations of Files
+=>Advantages of Data Base Softwares
+=>Setup of Third Party Modules in Python Program
+=>Installation of Third Party Modules to use in Python Program
+		a) cx_Oracle
+		b) oracledb
+		c) mysql-connector
+		d) mysql-connector-python
+=>Steps for Developing Python Data Base Comunication 
+=>What is meant by Query in Data Base Softwares
+=>Types of Quesries Data Base Softwares
+		a) DDL Queries
+		b) DML Queries
+		c) DRL Queries
+=>Executing DDL Queries through Python Program
+		a) create
+		b) alter
+		c) drop
+		=>Programming Examples
+=>Executing DML Queries through Python Program
+		a) insert
+		b) delete
+		c) update
+		=>Programming Examples
+=>Executing DRL Queries through Python Program
+		a) select
+		=>Programming Examples
+=>Processing of Records 
+		a) fetchone()
+		b) fetchmany() with  cases
+		c) fetchall()
+		=>Programming Examples
+=>Meta Data Programming
+		a) getting Col names along with records
+		b) description attribute
+		=>Programming Examples
+===========================================================================================
+BOOK Name---Oracle
+		SQL and PL/SQL developers Guide--Version 21c
+			By Ivon Bayras   -- BPB Publication--
+==========================================================================================			

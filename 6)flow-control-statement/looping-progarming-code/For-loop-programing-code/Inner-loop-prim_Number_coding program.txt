@@ -1,0 +1,90 @@
+# write a python program which will generate 1 to n multiplication table where n must be the positive integer value.
+# n=int(input("Enter a number whose Multiplication table you want : "))
+
+# for i in range(1,n+1):
+#     print("{} Multiplicaiton Table \n".format(i),"*"*50)
+    
+#     for j in range(1,11):
+#         print("{} x {} = {}".format(i,j,i*j))
+
+# write a python program which will generate multiplicatio table of random number and read the list of random number from keyboard.
+# continue statement use
+# =========================
+# print("Enter number whose multiplication table you want \n Enter ! for stop")
+# lst=[]
+# while("as you want"):
+#     val=input()
+#     if(val=="!"):
+#         break
+#     lst.append(int(val))
+# for i in lst:
+#     if i<=0:
+#         print("{} is Invalid input Can't generate Multiplication Table\n".format(i),"*"*50)
+#         continue
+#     print("{} Multiplicaiton Table ".format(i),"\n","*"*50)
+#     for j in range(1,11):
+#         print("{} x {} = {}".format(i,j,int(i)*j))
+#     print("*"*50)    
+        
+        
+#  pass statement use-case
+# =========================
+# print("Enter number whose multiplication table you want \n Enter ! for stop")
+# lst=[]
+# while("as you want"):
+#     val=input()
+#     if(val=="!"):
+#         break
+#     lst.append(int(val))
+# for i in lst:
+#     if i<=0:
+#         print("{} is Invalid input Can't generate Multiplication Table\n".format(i),"*"*50)
+#         pass
+#     else:
+#         print("{} Multiplicaiton Table ".format(i),"\n","*"*50)
+#         for j in range(1,11):
+#             print("{} x {} = {}".format(i,j,int(i)*j))
+#         print("*"*50)    
+        
+#write a python program which will generate list of prime number within n where n is a positive interger value.
+
+# n=int(input("Enter a number as far as prime number you want : "))
+# print("Prime number of in range 2 to {} \n".format(n),"*"*50)
+# for d in range(1,n):
+#     cond=True
+#     for i in range(2,int(d**0.5)+1):
+#         if d%i==0:
+#             cond=False
+#             break
+#     if cond:
+#         print("\t",d)
+
+# write a python program which will accept list of value and display only primes.
+# print("Enter a list of number to check prime and Enter ! for exit : ")
+
+# lst=[]
+# PrimNumber_List=[]
+# while("as you want"):
+#     val=input()
+#     if(val=="!"):
+#         break
+#     lst.append(int(val))
+    
+# print("Random number list : {} ".format(lst))
+    
+# for d in lst:
+#     if d<=0:
+#         print("{} is Invalid input \n".format(i),"*"*50)
+#         pass
+#     else:
+#         cond=True
+#         for i in range(2,int(d**0.5)+1):
+#             if d%i==0:
+#                 cond=False
+#                 break
+#         if cond:
+#             PrimNumber_List.append(d)
+# else:
+#     print("Prime number list : {}".format(PrimNumber_List))    
+
+                

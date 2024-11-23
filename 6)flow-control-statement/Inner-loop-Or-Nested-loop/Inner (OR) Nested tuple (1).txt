@@ -1,0 +1,139 @@
+		==================================================
+					Inner (OR) Nested tuple
+		==================================================
+=>The Process of Defining One tuple in another tuple is called Inner or Nested tuple
+=>Syntax:- tplobj1=( Val1,Val2....(Val11,Val12....Val1n).....(Val21,Val22...Val2n)..........Val-n )
+=>Here  (Val11,Val12....Val1n) is called One Inner OR Nested tuple
+	      (Val21,Val22...Val2n)  is called another Inner OR Nested tuple
+=> ( Val1,Val2....(Val11,Val12....Val1n).....(Val21,Val22...Val2n)....Val-n ) is called Outer tuple
+=>All the pre-defined Functions of tuple can be applied on Inner or Nested tuple.
+=>On Inner or Nested tuple we can perform Index and Slicing Operations.
+----------------------------------------------------------------------------------------------------------
+>>> sf=(10,"RS",(17,18,16),(78,66,79),"OUCET")
+>>> print(sf,type(sf))------------(10, 'RS', (17, 18, 16), (78, 66, 79), 'OUCET') <class 'tuple'>
+>>> print(sf[0])-----10
+>>> print(sf[2],type(sf[2]),type(sf))---------(17, 18, 16) <class 'tuple'> <class 'tuple'>
+>>> print(sf[0:3])------------(10, 'RS', (17, 18, 16))
+---------------------------------------------------------------------------
+>>> sf=(10,"RS",[17,18,16],(78,66,79),"OUCET")
+>>> print(sf,type(sf))----------------(10, 'RS', [17, 18, 16], (78, 66, 79), 'OUCET') <class 'tuple'>
+>>> print(sf[2],type(sf[2]),type(sf))------------[17, 18, 16] <class 'list'> <class 'tuple'>
+>>> sf[2].append(12)
+>>> print(sf[2],type(sf[2]),type(sf))------------[17, 18, 16, 12] <class 'list'> <class 'tuple'>
+>>> print(sf,type(sf))---------(10, 'RS', [17, 18, 16, 12], (78, 66, 79), 'OUCET') <class 'tuple'>
+>>> sf[3].append(12)---AttributeError: 'tuple' object has no attribute 'append'
+-------------------------------------------------------
+>>> sf=[10,"RS",[17,18,16],(78,66,79),"OUCET"]
+>>> print(sf,type(sf))-------------[10, 'RS', [17, 18, 16], (78, 66, 79), 'OUCET'] <class 'list'>
+>>> print(sf[2],type(sf[2]),type(sf))--------[17, 18, 16] <class 'list'> <class 'list'>
+>>> print(sf[3],type(sf[3]),type(sf))-------(78, 66, 79) <class 'tuple'> <class 'list'>
+-----------------------------------------------------------------------------------------------------------
+NOTE:
+--------
+=>One can define One List in another List
+=>One can define One Tuple in another Tuple
+=>One can define One List in another Tuple ( tuple of lists)
+=>One can define One tuple in another List (list of tuples)
+---------------------------------------------------------------------------------------------------------
+>>> print(t1,type(t1))
+(10, 'Rossum', [16, 18, 17], ('CSE', 'AI', 'DS'), 'OUCET') <class 'tuple'>
+>>> print(t1[2],type(t1[2]))-------[16, 18, 17] <class 'list'>
+>>> print(t1[3],type(t1[3]))------('CSE', 'AI', 'DS') <class 'tuple'>
+>>> t1[2].append("KVR")
+>>> print(t1,type(t1))--(10, 'Rossum', [16, 18, 17, 'KVR'], ('CSE', 'AI', 'DS'), 'OUCET') <class 'tuple'>
+>>> t1[3].append("Python")-----AttributeError: 'tuple' object has no attribute 'append'
+>>> t1[2][1]--------18
+>>> t1[2][-2]------17
+>>> t1[2][-3]------18
+>>> k=sorted(t1[-2])
+>>> k------------['AI', 'CSE', 'DS']
+>>> t1[3]=k---------TypeError: 'tuple' object does not support item assignment
+>>> l1=list(t1)----
+>>> l1----------[10, 'Rossum', [16, 18, 17, 'KVR'], ('CSE', 'AI', 'DS'), 'OUCET']
+>>> l1[3]=k
+>>> l1-----[10, 'Rossum', [16, 18, 17, 'KVR'], ['AI', 'CSE', 'DS'], 'OUCET']
+>>> y=tuple(l1[3])
+>>> l1[3]=y
+>>> l1-----[10, 'Rossum', [16, 18, 17, 'KVR'], ('AI', 'CSE', 'DS'), 'OUCET']
+>>> t2=tuple(l1)
+>>> t2-----(10, 'Rossum', [16, 18, 17, 'KVR'], ('AI', 'CSE', 'DS'), 'OUCET')
+-------------------------------
+>>> t1=('AI', 'cSE', 'DS')
+>>> k=sorted(t1)
+>>> k-------['AI', 'DS', 'cSE']
+----------------------------------------------------------------------------------
+>>> tpl=(10,"RS",(15,18,17),(77,80,75),"OUCET")
+>>> print(tpl,type(tpl))
+(10, 'RS', (15, 18, 17), (77, 80, 75), 'OUCET') <class 'tuple'>
+>>> for val in tpl:
+...     print(val,type(val),type(tpl))
+...
+10 <class 'int'> <class 'tuple'>
+RS <class 'str'> <class 'tuple'>
+(15, 18, 17) <class 'tuple'> <class 'tuple'>
+(77, 80, 75) <class 'tuple'> <class 'tuple'>
+OUCET <class 'str'> <class 'tuple'>
+>>> sorted(tpl[2])
+[15, 17, 18]
+>>> del tpl[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object doesn't support item deletion
+
+>>> tpl=(10,"RS",[15,18,17],[77,80,75],"OUCET")
+>>> print(tpl,type(tpl))
+(10, 'RS', [15, 18, 17], [77, 80, 75], 'OUCET') <class 'tuple'>
+>>> for val in tpl:
+...     print(val,type(val),type(tpl))
+...
+10 <class 'int'> <class 'tuple'>
+RS <class 'str'> <class 'tuple'>
+[15, 18, 17] <class 'list'> <class 'tuple'>
+[77, 80, 75] <class 'list'> <class 'tuple'>
+OUCET <class 'str'> <class 'tuple'>
+>>> tpl[2].append(16)
+>>> print(tpl,type(tpl))
+(10, 'RS', [15, 18, 17, 16], [77, 80, 75], 'OUCET') <class 'tuple'>
+>>> tpl[3].insert(0,72)
+>>> print(tpl,type(tpl))
+(10, 'RS', [15, 18, 17, 16], [72, 77, 80, 75], 'OUCET') <class 'tuple'>
+>>> tpl[2].sort(reverse=False)
+>>> print(tpl,type(tpl))
+(10, 'RS', [15, 16, 17, 18], [72, 77, 80, 75], 'OUCET') <class 'tuple'>
+>>> tpl[-2].sort(reverse=True)
+>>> print(tpl,type(tpl))
+(10, 'RS', [15, 16, 17, 18], [80, 77, 75, 72], 'OUCET') <class 'tuple'>
+>>> tpl[2]=[10,12,11,34]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> tpl[3][2:]
+[75, 72]
+>>> tpl[3][::2]
+[80, 75]
+>>> tpl[3][::-1]
+[72, 75, 77, 80]
+>>>
+>>>
+>>>
+>>> lst=[10,"RS",(15,18,17),(77,80,75),"OUCET"]
+>>> for val in lst:
+...     print(val,type(val),type(lst))
+...
+10 <class 'int'> <class 'list'>
+RS <class 'str'> <class 'list'>
+(15, 18, 17) <class 'tuple'> <class 'list'>
+(77, 80, 75) <class 'tuple'> <class 'list'>
+OUCET <class 'str'> <class 'list'>
+>>> lst[2]
+(15, 18, 17)
+>>> lst[3]=(76,72,71)
+>>> print(lst)
+[10, 'RS', (15, 18, 17), (76, 72, 71), 'OUCET']
+>>> lst.insert(-1,(18,17,11))
+>>> print(lst)
+[10, 'RS', (15, 18, 17), (76, 72, 71), (18, 17, 11), 'OUCET']
+>>> lst.insert(3,[11,22,33,44])
+>>> print(lst)
+[10, 'RS', (15, 18, 17), [11, 22, 33, 44], (76, 72, 71), (18, 17, 11), 'OUCET']
+==========================================x===============================================

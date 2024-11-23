@@ -1,0 +1,9 @@
+		=========================================================
+					Set Category Data Types((Collection Data Types OR Data Structures )
+		=========================================================
+=>The Purpose of Set Category Data Types is that "To store Multiple Values either of Same Type or Different Type or Both the Types in single Object with Unique Values(No Duplicates are allowed)".
+=>In Python Programming, we have 2 Types Data Types in Set Category. They are
+
+				1. set (Mutable and Immutable)
+				2. frozenset (Immutable)
+===============================================================================================

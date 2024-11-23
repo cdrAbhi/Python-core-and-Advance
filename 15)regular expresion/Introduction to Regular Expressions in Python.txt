@@ -1,0 +1,22 @@
+			=====================================================================
+						Regular Expressions in Python
+			=====================================================================
+=>The purpose of Regular Expressions in Python is that " To Build Robust Applications by using Data Validations".
+=>The Regular Expressions Concept is one of the Programming Language Independent Concept and whose Library 
+    Implemented in Python on the name of "re" module.
+=>In order to Develop Regular Expressions Applications in Python, we must use and import re module.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					Applications of Regular Expressions in Python
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Regular Expressions are used in Compiler and Interpreters Develoment
+=>Regular Expressions are used in development of OSes
+=>Regular Expressions are used in developement of Universal Protocols--like http,smtp,pop,nmtp..etc
+=>Regular Expressions are used in Development Electronic Circuits.
+=>Regular Expressions are used in Pattern Matching
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					Definition of Regular Expression
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>A  Regular Expression is one of the Search Pattern, which is the combination of Alphabets,Digits and Special Symbols which 
+    is used for Searching OR Matching or Finding in Given Data and Obtains Desired Result.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

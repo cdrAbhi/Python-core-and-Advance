@@ -1,0 +1,44 @@
+# write a python program which will accept age of the citizen  and decide to whether the citizen is aligiable to vote or note.
+# =============================================================================================================================
+
+# while True:
+#     age=int(input("Please Enter your age :"))
+#     if age>=18 and age<=100:
+#         print("you are eligible to vote\n")
+#         break
+#     else:
+#         print("{} year citizen is not eligible to Vote \n".format(age))
+        
+# write a python program which will implement the following problem.
+
+d={}
+
+while True:
+    name=input("Enter your name : ")
+    c=int(input("Enter your C marks : "))
+    cpp=int(input("Enter your CPP marks : "))
+    pth=int(input("Enter your Python marks : "))
+    T=(c+cpp+pth)
+    P=(T/300)*100
+    if c>=60 and cpp>=60 and pth>=60:
+        d[name] = {"marks": {"C": c, "CPP": cpp, "Python": pth}, "Total_Marks": T, "percentage": P}
+        print("Thank you for applying")
+        break
+    else:
+        print("You are not Eligible to apply")
+        
+name=input("For Review Your application your name :")
+if name in d:
+    print("Name: {}\n===========\nMarks\n==========\nC  : {}\n==========\nCPP : {}\n=========\nPython  : {}\n=========\nTotal mark : {}\n==========\nPercentage: {}\n".format(name, d[name]["marks"]["C"], d[name]["marks"]["CPP"], d[name]["marks"]["Python"], d[name]["Total_Marks"], d[name]["percentage"]))
+else:
+    print("{} is not apply for exam".format(name))
+    
+    
+# write a Python program which will validate name of the person or place or thing. 
+    
+    
+    
+
+
+
+ 

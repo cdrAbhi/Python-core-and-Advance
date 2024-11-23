@@ -1,0 +1,31 @@
+		==================================================
+		     Real Time Applications Developed by using  PYTHON
+		==================================================
+=>By Leaning Python Programming along with Additional Skills (Full Stack Python+ Data Science), we can develop the following Real Time Applications.
+
+			1. Develpment of Web Applications(Web Sites)
+					a) Java Prog Lang---->Tech--->Servlets,JSP,JDBC, Spring,Spring Micro Services	
+						(SUN MS---->Oracle Corp)
+					b) C#.net Prog Lang--->Tech--->ASP.net,ASP Mcro Services..etc
+						(Micro Soft INC, USA)
+					c) PYTHON Prog Lang---->Tech--->Django OR Flask, OR Pyramid OR Bottle
+
+			2. Development Gaming Applications
+			3. Development Artificial Intelligence
+							a) Machine Leanrning
+							b) Deep Learning
+			4. Development of Image Processing
+			5. Development Video and  Audio  Based Applications
+			6. Development Deskto GUI Applications
+			7. Devlopment Business Appliocations
+			8. Development of Software Application (Project Development)
+			9. Development Complex math Operations.
+			10. Data Analysis and Data Analytics
+			11. Data Visualization 
+			12. Console Based Applications
+			13. Animation of Application
+			14. Automation Testing
+			15. OS Installers
+			..................................
+			--------------------------------
+

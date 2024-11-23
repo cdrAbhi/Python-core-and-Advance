@@ -1,0 +1,143 @@
+				====================================================
+						6. MemberShip Operators--Most Imp
+				====================================================
+=>The purpose of MemberShip Operators is that "To Check the Existence of a Particular Value in Iterable Object".
+=>An Iterable Object is one which contains More than One Value ( Ex: str,bytes,bytearray,range,list,tuple,set,frosenset,dict) and 
+    where as non-iterable objects are those which contains single Value( int,float,bool,complex,NoneType)
+=>In Python Programming, we have 2 Types of MemberShip Operators. They are
+
+					1. in
+					2. not in
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. in
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:    Value in Iterbale-Object
+=>Here "in" Operator Returns True Provided "Value" Present in Iterable-Object
+=>Here "in" Operator Returns False Provided "Value" not Present in Iterable-Object
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. not in
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:    Value not in Iterbale-Object
+=>Here "not in" Operator Returns True Provided "Value" not Present in Iterable-Object
+=>Here "not in" Operator Returns False Provided "Value"  Present in Iterable-Object
+===================================================================================================
+Examples
+===================================================================================================
+>>> s="PYTHON"
+>>> "P" in s
+True
+>>> "O" in s
+True
+>>> "p" not in s
+True
+>>> "P" not in s
+False
+>>> "Q" in s
+False
+------------------------
+>>> s="PYTHON"
+>>> "PYT" in s
+True
+>>> "PYThon" in s
+False
+>>> "HON" not in s
+False
+>>> "HON" in s
+True
+>>> "HYD" not in s
+True
+*****************************************
+>>> s="PYTHON"
+>>> "PTO" in s
+False
+>>> "NOH" in s
+False
+>>> "NOH" in s[::-1]
+True
+>>> "PYT" not in s[::-1]
+True
+>>> "PTO" in s[::2][::-1]
+False
+>>> "PTO" in s[::2][::-1][::-1]
+True
+>>> "PTO" not in s[-2::-2]
+True
+>>> "PTO"[::-1] not in s[-2::-2][::-1][::-1]
+True
+>>> s in s
+True
+***************************************************
+>>> lst=[100,"Rossum",23.45,2+3j]
+>>> "sum" in lst---------------False
+>>> "sum" in lst[1]-------------True
+>>> 2 in lst[-1]-----------------------TypeError: argument of type 'complex' is not iterable
+>>> 2 not in lst[-1].real--------------TypeError: argument of type 'float' is not iterable
+***************************************************
+>>> d1={10:"Apple",20:"Mango",30:"Kiwi"}
+>>> "Apple" not in d1
+True
+>>> 10 in d1
+True
+>>> 20 not in d1
+False
+>>> d1[10][::-1] in d1.get(10)[::]
+False
+>>> d1.get(100) not in d1
+True
+>>> s="Apple is in red"
+>>> "e" in s
+True
+>>> "e"[::-1] in s
+True
+------------------------------------------------------------------
+>>> "1" in [1,2,3,4,5,6,7,8,9,0]
+False
+>>> "1" in str([1,2,3,4,5,6,7,8,9,0])
+True
+>>> "1,2,3" not in  str([1,2,3,4,5,6,7,8,9,0])
+True
+>>> 1,2,3 not in  str([1,2,3,4,5,6,7,8,9,0])----------------TypeError: 'in <string>' requires string as left operand, not int
+>>> 1+2+3 not in  str([1,2,3,4,5,6,7,8,9,0])--------------TypeError: 'in <string>' requires string as left operand, not int
+>>> str(1+2+3) not in  str([1,2,3,4,5,6,7,8,9,0])
+False
+>>> str(1+2+3) in  str([1,2,3,4,5,6,7,8,9,0])
+True
+--------------------------------------------------------------
+>>> lst=["Apple","Mango",123,"True"]
+>>> lst[0] not in lst
+False
+>>> lst[0][::2] not in lst[::-1][::-1][::2]
+True
+===================================================================================================
+
+
+
+Explaination of Que: [>>> "1,2,3" not in  str([1,2,3,4,5,6,7,8,9,0]) =====>True]
+=======================================================
+str1=str([1,2,3,4,5])
+s1 = "1,2,3" 
+s2 =str1[1:9]
+print("value of s1 = %s"%s1)
+print("value of s2 = %s"%s2)
+print("length of s1 = ",len(s1))
+print("length of s2 = ",len(s2))
+print("Is  1,2,3 == str[1:9] = {}".format(s1==s2))
+print("1,2,3"==str1[1:9])
+
+for i in str1:
+  print(i,end='---')
+print("1,2" in str1)
+
+=OUTPUT===============================
+value of s1 = 1,2,3
+value of s2 = 1, 2, 3,
+length of s1 =  5
+length of s2 =  8
+Is  1,2,3 == str[1:9] = False
+False
+[---1---,--- ---2---,--- ---3---,--- ---4---,--- ---5---]---False
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+=========================================

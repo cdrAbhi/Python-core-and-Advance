@@ -1,0 +1,91 @@
+# wrire a python program which will accept list of value and find some and average without using predefine function sum by using function concept.
+# ====================================================================================================================
+
+def readvalue():
+    lst=[]
+    print("Enter value and enter # for stop")
+    while(True):
+        val=input()
+        if val=="#":
+            break
+        elif(not val.isdigit()):
+            print("value {} is Invalid input enter valid input".format(val))
+        else:
+            lst.append(int(val))
+            
+    return lst
+    
+def findsum():
+    lst=readvalue()
+    if(len(lst)==0):
+        print("Empty list : {}".format(lst))
+    else:
+        s=0
+        for val in lst:
+            s+=val
+        else:
+            print("sum {} : {}".format(lst,Avrg(s,len(lst))))
+            print("Average {} : {}".format(lst,Avrg(s,len(lst))))
+            return
+
+def Avrg(s,l):
+    return s/l
+    
+    
+ 
+while(True): 
+    opt=input("For start Enter s : \nEnter E for exit :")  
+    if(not opt.isalpha() or (opt.upper()!='E' and opt.upper()!='S')):
+        print("Invailid input")
+    elif opt.upper()=="E":
+        break
+    else:
+        findsum()
+ 
+       
+
+#mthd-2
+#=======
+
+def readvalue():
+    lst=[]
+    print("Enter value and enter # for stop")
+    while(True):
+        val=input()
+        if val=="#":
+            break
+        elif(not val.isdigit()):
+            print("value {} is Invalid input enter valid input".format(val))
+        else:
+            lst.append(int(val))
+            
+    return lst
+    
+def findsum():
+    lst=readvalue()
+    if(len(lst)==0):
+        print("Empty list : {}".format(lst))
+    else:
+        s=0
+        for val in lst:
+            s+=val
+        else:
+            print("sum {} : {}".format(lst,Avrg(s,len(lst))))
+            print("Average {} : {}".format(lst,Avrg(s,len(lst))))
+            return
+
+def Avrg(s,l):
+    return s/l
+    
+    
+ 
+while(True): 
+    opt=input("For start Enter s : \nEnter E for exit :")  
+    if(not opt.isalpha() or (opt.upper()!='E' and opt.upper()!='S')):
+        print("Invailid input")
+    elif opt.upper()=="E":
+        break
+    else:
+        findsum()
+ 
+     

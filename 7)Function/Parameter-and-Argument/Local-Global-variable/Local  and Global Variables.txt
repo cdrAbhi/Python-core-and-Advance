@@ -1,0 +1,52 @@
+                                       Local variables and Global Variables
+                                       ====================================
+Local variable:
+=============
+    => The Variables used inside of Function Body are called Local Variables.
+    => The Purpose of Local Variables is that "To Store the Temporary results".
+    => Local Variables Can be accessed inside of Corresponding Function Body But Not possible to access in other Part of the
+        program.
+=======
+Syntax:
+=========
+        def functionname(list of formal Params if any):
+            varl=vall
+            var2=Va12
+            ----------
+            var-n=val-n
+            ----------
+=>here varl ,var2..var-n are called Local Variables bcoz they are used inside of Function Body .
+-----------------
+Global Variables
+------------------
+    => Global variables are those which are common values for different function calls.
+    => In Other words, if the Value is common for all Different Function Calls then such type
+        of values must be taken as Global Variables.
+    => To access the values of Global Variables then They Must be defined Before Function
+       Calls only otherwise we get NameError.
+       
+Syntax:
+=========
+        def functionname(list of formal Params if any):
+Syntax:
+=========
+            varl=vall
+            var2=Va12
+            ----------
+            var-n=val-n
+            ----------
+
+        def functionname-1(list of formal Params if any):
+            ----------
+            ----------
+        def functionname-2(list of formal Params if any):
+            ----------
+            ----------  
+        def functionname-3(list of formal Params if any):
+            ----------
+            ----------  
+            
+            
+            
+            
+            

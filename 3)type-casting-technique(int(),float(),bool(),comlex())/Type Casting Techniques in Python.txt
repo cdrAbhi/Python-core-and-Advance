@@ -1,0 +1,341 @@
+		=====================================================
+				Type Casting Techniques in Python
+		=====================================================
+=>The Process of Converting One Possible type of Values into Another Type of Value is called Type 
+    Casting.
+=>In Python Programming, we have 5 Fundamental Type Casting Techniques. They are
+				
+				1) int()
+				2) float()
+				3) bool()
+				4) complex()
+				5) str()
+=================================================================                                                                                 
+                                  int()                                           
+                              ==========
+
+=>int() is used converting One Possible Type of Value into int type value.
+   —Syntax:
+    varname=int(float I bool I complex I str )
+Examplel: float type to int type----POSSIBLE
+==============================
+a—10.23
+print(a,type(a))   ---------- 10.23 <class 'float'>
+b=int(a)
+print(b,type(b))
+print(int(100.999))---------10 <class 'int'>
+------------------------------------------------------------------------
+Example2: bool type to int type—POSSlBLE
+==============================
+a—True
+>>> print(a,type(a))       -----------------True <class 'bool'>
+b=int(a)
+>>print(b,type(b))  ------------------------ 1 <class' int>
+a=False
+ print(a,type(a))  --------------------------- 0 <class 'int'>
+---------------------------------------------------------------------------
+Example3: complex type to int type—NOT POSSIBLE
+==============================
+a=2+3j
+<class •complex'>
+b=int(a)   ------------------------  TypeError: int() argument must be a string, a bytes-like object or a real
+---------------------------------------------------------------------------
+==============================
+Example4:str type to int type
+==============================
+Case-1: str int  to int ==>possible
+----------
+Case-2:strfloat to int =>NotPossible ==> valueError
+----------
+a="12.34"
+print(a,type(a)) -------------> 12.34 <class 'str'>
+b=int('12.34')------------------->ValueError: invalid literal for int() with base 10: '12.34
+
+Case-3:str comlex to int =>NotPossible ==> valueError
+----------
+a="2+3j"
+print(a,type(a))  ------------------------ 2+3j <class 'str'>
+b=int(a)------------------------------------ValueError: invalid literal for int() with base 10: '2+3j'
+
+Case-4:str bool to int =>NotPossible ==> valueError
+----------
+a="True"
+print(a,type(a)) --------------------------------- True <class 'str'>
+b=int(a)---------------------------------------------ValueError: invalid literal for int() with base 10: 'True'
+
+Case-5:str Special symbole to int =>NotPossible ==> valueError
+----------
+=======================================================
+                                
+
+                               
+
+
+                                             2) bool()
+                                 ====================
+
+=> bool() is used converting One Possible Type of Value into bool type value.
+   —Syntax:
+    varname=bool(int I bool I complex I str )
+
+Examplel: int type to bool type----POSSIBLE[any bool(Non-zero) = True && bool(o) ==Falses]
+==============================
+a=10
+print(a,type(a))   ---------- 10 <class 'bool'>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+print(bool(0))-----------------False,class 'bool'>
+------------------------------------------------------------------------
+
+Example2: float type to bool type—POSSlBLE[any bool(Non-zero) = True && bool(o) ==Falses]
+==============================
+a=1.2
+>>> print(a,type(a))       -----------------1.2 <class 'float>
+b=bool(a)
+>>print(b,type(b))  ------------------------ True<class' float>
+a=0.0
+ print(a,bool(a))  --------------------------- False <class 'float>
+---------------------------------------------------------------------------
+Example3: complex type to bool type—[any bool(Non-zero) = True && bool(o) ==Falses]
+==============================
+a=2+3j
+print(type(a))----------------------<class •complex'>
+b=bool(a)  
+print(type(b),bool(b)) ------------------------ True,<class •complex'>
+print(bool(0+oi)) ------------------------ False,<class •complex'>
+---------------------------------------------------------------------------
+==============================
+Example4:str type to bool type[any bool(val) if length val>0 == True esle ==Falses]
+==============================
+Case-1:str int to bool ==>possible
+----------
+a="10"
+print(a,type(a))   ---------- "10" <class 'str'>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+print(bool("0"))---------True <class 'bool>
+
+
+Case-2:str float to bool =Possible 
+----------
+----------
+a="10.12"
+print(a,type(a))   ---------- "10.12" <class 'str>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+print(bool("0.0"))---------True <class 'bool>
+
+
+
+Case-3:str comlex to bool =>Possible 
+----------
+a="2+3j"
+print(a,type(a))   ---------- "2+3j" <class 'str>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+print(bool("0.0+oi"))---------True <class 'bool>
+
+Case-4:str bool to bool =>Possible 
+----------
+a="True"
+print(a,type(a))   ---------- "True" <class 'str>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+print(bool("False"))---------True <class 'bool>a="False"
+
+Case-5:str Special symbole to float=>NotPossible ==> valueError
+----------
+a="#$#$%"
+print(a,type(a)) --------------------------------- "#$#$%" <class 'str'>
+b=bool(a)
+print(b,type(b)) --------------True,<class 'bool>
+
+==========================================================================
+
+
+
+
+
+
+                                  float
+                                 ===================
+
+=> float() is used converting One Possible Type of Value into float type value.
+   —Syntax:
+    varname=float(intt I bool I complex I str )
+
+Examplel: int type to float type----POSSIBLE
+==============================
+a—10
+print(a,type(a))   ---------- 10 <class 'float'>
+b=float(a)
+print(b,type(b)) --------------10.0,<class 'float>
+print(float(100))---------100.0 <class 'float'>
+------------------------------------------------------------------------
+
+Example2: bool type to float type—POSSlBLE
+==============================
+a—True
+>>> print(a,type(a))       -----------------True <class 'bool>
+b=float(a)
+>>print(b,type(b))  ------------------------ 1.0 <class' float>
+a=False
+ print(a,float(a))  --------------------------- 0.0 <class 'float>
+---------------------------------------------------------------------------
+Example3: complex type to float type—NOT PO"IBLE
+==============================
+a=2+3j
+<class •complex'>
+b=float(a)   ------------------------  TypeError: int() argument must be a string, a bytes-like object or a rea
+---------------------------------------------------------------------------
+==============================
+Example4:str type tofloat type
+==============================
+Case-1:str int to float ==>possible
+----------
+a="10"
+print(a,type(a))   ---------- "10" <class 'str'>
+b=float(a)
+print(b,type(b)) --------------10.0,<class 'float>
+print(float("100"))---------100.0 <class 'float'>
+
+
+Case-2:str float to float =Possible 
+----------
+a="10.0"
+print(a,type(a))   ---------- "10.0" <class 'str'>
+b=float(a)
+print(b,type(b)) --------------10.0,<class 'float>
+print(float("100.12"))---------100.12 <class 'float'>
+
+
+Case-3:str comlex to float =>NotPossible ==> valueError
+----------
+a="2+3j"
+print(a,type(a))  ------------------------ "2+3j" <class 'str'>
+b=float(a)------------------------------------ValueError: could not convert string to float: '1+3i'
+
+Case-4:str bool to float =>NotPossible ==> valueError
+----------
+a="True"
+print(a,type(a)) --------------------------------- "True" <class 'str'>
+b=float(a)---------------------------------------------ValueError: could not convert string to float: 'True'
+
+a="False"
+print(a,type(a)) --------------------------------- "False" <class 'str'>
+b=float(a)---------------------------------------------ValueError: could not convert string to float: 'False'
+
+Case-5:str Special symbole to float=>NotPossible ==> valueError
+----------
+a="Python"
+print(a,type(a)) --------------------------------- "Python" <class 'str'>
+b=float(a)---------------------------------------------ValueError: could not convert string to float: 'Python'
+
+
+
+
+
+==============================================================================
+                                                           4) complex
+                                                       ===========
+
+=>complex() is used converting One Possible Type of Value into complex type value.
+=>Syntax:
+complex(int I float I bool I str )
+------------------------------------------
+
+=> Example-I: int type to complex type—POSSIBLE
+===================================
+a=10
+>>> print(a,type(a))--------------------10 <class 'int'>
+b=complex(a)
+print(b,type(b))------------------------>>>10+0i <class 'complex'>
+=======================================
+
+
+Example-2: float type to compelx type----POSSIBLE
+-----------------------------------------------------------------
+a=1.2
+>>> print(a,type(a)) ---------------------1.2 <class 'float'>
+b=complex(a)
+print(b,type(b))-------------------------------)>>> .2+Oj) <class 'complex'>
+=========================================
+
+
+ExamDle3: bool type to complex tvoe—POSSlBLE
+-----------------------------------------------------------------
+a=True
+>>> print(a,type(a)) ---------------------True <class 'bool'>
+b=complex(a)
+print(b,type(b))-------------------------------)>>> 1+Oj) <class 'complex'>
+-------------
+a=False
+>>> print(a,type(a)) ---------------------False <class 'bool'>
+b=complex(a)
+print(b,type(b))-------------------------------)>>> 0+0j) <class 'complex'>
+====================================
+
+
+ExamDle3: str type to complex tvoe—POSSlBLE
+-----------------------------------------------------------------
+case-I : str int  to complex type—POSSlBLE
+----------------------------------------------------------------
+a="10"
+>>> print(a,type(a))--------------------"10" <class 'str'>
+b=complex(a)
+print(b,type(b))------------------------>>>10+0i <class 'complex'>
+=======================================
+
+case-II: str float to complex type—POSSlBLE
+----------------------------------------------------------------
+a="10.0"
+>>> print(a,type(a))--------------------"10.0" <class 'float'>
+b=complex(a)
+print(b,type(b))------------------------>>>10.0+0i <class 'complex'>
+
+========================================
+
+case-III : str complex  to complex type— POSSlBLE  (Here comlex of check data is available in the form of (a+bi) OR (a-bi)) here a ,b is an real number.
+----------------------------------------------------------------
+a="4+3j"
+>>> print(a,type(a))--------------------"4+3i" <class 'str'>
+b=complex(a)
+print(b,type(b))------------------------>>>4+3i <class 'complex'>
+=========================================
+
+case-IV : str bool  to complex type—Not POSSlBLE ("True" andd "False" treated as pure string ONly True and False treated as 1 and 0)
+----------------------------------------------------------------
+a="True"
+>>> print(a,type(a))--------------------"True" <class 'str'>
+b=complex(a)
+print(b,type(b))------------------------>>>valueError
+=========================================
+
+case-V : pure str to complex type—Not POSSlBLE 
+----------------------------------------------------------------
+a="Guido Van Rossom"
+>>> print(a,type(a))--------------------"Guido Van Rossom" <class 'str'>
+b=complex(a)
+print(b,type(b))------------------------>>>valueError
+
+============================================
+
+
+
+
+
+                                                                      str()
+                                                               ============
+
+
+=> int ,float , bool,complex to str (posisible)
+==========================
+print(str(1),type(str(1)))-------------------1 <class 'str'>
+print(str(1.2),type(str(1.2)))--------------1.2 <class 'str'>
+print(str(True),type(str(True)))---------True <class 'str'>
+b=str(3+4i)
+print(b,type(b))----------------------- -----3+4j <class'str>
+
+
+
+
