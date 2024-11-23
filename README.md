@@ -88,7 +88,7 @@ Python-core-and-Advance/
 └── README.md
 ```
 
----
+<br />
 
 ## Languages and Tools
 
@@ -106,7 +106,7 @@ GitHub: A platform for version control and collaboration.
 VSCode: A lightweight yet powerful code editor for writing and managing your Python scripts.
 
 <br />
----
+
 
 ## Contributing
 
